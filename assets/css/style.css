@@ -1,0 +1,165 @@
+body main header .header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between; }
+  body main header .header .logo h1 a {
+    color: white;
+    text-decoration: none; }
+  body main header .header nav ul {
+    display: flex;
+    flex-direction: row; }
+    body main header .header nav ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body main header .header nav ul li a {
+        margin-left: 7px;
+        color: white;
+        text-decoration: none;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        padding: 9px 25px;
+        transition: 0.3s; }
+        body main header .header nav ul li a:hover {
+          background-color: #e8676b;
+          border: 1px solid #e8676b; }
+      body main header .header nav ul li a.active {
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 9px 25px;
+        background-color: #e8676b;
+        opacity: 0.8; }
+body main .slogan {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0;
+  font-size: 6em;
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+body main .readmore {
+  color: white; }
+  body main .readmore p.say {
+    color: #ffffff;
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding: 6px 20px;
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+  body main .readmore a {
+    border: 2px solid #e8676b;
+    border-radius: 40px;
+    padding: 6px 20px;
+    margin: 0;
+    color: #e8676b;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s; }
+    body main .readmore a:hover {
+      background-color: #e8676b;
+      border: 2px solid #e8676b; }
+body main section {
+  padding: 0; }
+  body main section #about {
+    background-color: #38dcc8; }
+body main .modal {
+  z-index: 9999; }
+body main section #about .container .row {
+  background-image: url("https://2.pik.vn/2020704f3dff-a9e0-4f6e-a708-579ed6a3775a.png");
+  background-repeat: no-repeat;
+  background-position: 170px 150px; }
+  body main section #about .container .row .square1 {
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 100px 10px;
+    width: 330px;
+    height: 364px;
+    border: 11px solid white; }
+    body main section #about .container .row .square1 h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-size: 42px;
+      line-height: 1.2em;
+      color: white;
+      font-weight: 900;
+      letter-spacing: 0.15em; }
+  body main section #about .container .row .square2 {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin: 100px 10px;
+    width: 314px;
+    height: 364px; }
+    body main section #about .container .row .square2 .text p {
+      line-height: 1.2em;
+      color: white;
+      text-align: justify; }
+body main section #skills {
+  padding-top: 40px; }
+  body main section #skills h2 {
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 1.2em;
+    font-weight: 900;
+    letter-spacing: 0.15em; }
+  body main section #skills .container .row .col-md-3.col-sm-12 {
+    margin-bottom: 10px;
+    padding: 0; }
+    body main section #skills .container .row .col-md-3.col-sm-12 .square {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      max-width: 270px;
+      height: 400px;
+      max-height: 400px;
+      box-shadow: 0 0 2px #717171; }
+      body main section #skills .container .row .col-md-3.col-sm-12 .square:hover {
+        box-shadow: 0 0 5px #333; }
+      body main section #skills .container .row .col-md-3.col-sm-12 .square img {
+        max-width: 150px;
+        height: auto; }
+      body main section #skills .container .row .col-md-3.col-sm-12 .square span {
+        margin-top: 10px;
+        font-weight: bold;
+        color: brown; }
+body main section #portfolio {
+  padding-top: 40px; }
+  body main section #portfolio h2 {
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 1.2em;
+    font-weight: 900;
+    letter-spacing: 0.15em; }
+body #toTop {
+  position: fixed;
+  top: 90%;
+  right: 50px; }
+  body #toTop a i {
+    font-size: 19px;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 30px;
+    background-color: #e8676b;
+    transition: 0.3s;
+    opacity: 0.8; }
+    body #toTop a i:hover {
+      background-color: black; }
+
+/*# sourceMappingURL=style.css.map */
