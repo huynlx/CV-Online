@@ -1,4 +1,7 @@
 body {
+    li {
+        list-style: none;
+    }
     // overflow: hidden;
     #main {
         header {
@@ -110,6 +113,7 @@ body {
             padding: 0;
 
             #about {
+                padding-top: 50px;
                 background-color: #38dcc8;
             }
         }
@@ -172,11 +176,15 @@ body {
                             // border: 11px solid white;
                             .text {
                                 p {
+                                    // font-family: 'Muli',sans-serif;
+                                    // font-style: italic;
+                                    // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+                                    //     Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+                                    //     "Segoe UI Symbol", "Noto Color Emoji";
                                     // font-size: 15px;
                                     // font-family: Arial, Helvetica, sans-serif;
                                     // font-family: fieldwork, sans-serif;
-                                    line-height: 1.2em;
-                                    font-style: normal;
+                                    line-height: 1.4em;
                                     // font-weight: lighter;
                                     color: white;
                                     text-align: justify;
@@ -188,7 +196,7 @@ body {
                 }
             }
             #skills {
-                padding-top: 40px;
+                padding-top: 100px;
                 // padding-bottom: 80px;
                 display: flex;
                 justify-content: center;
@@ -346,9 +354,10 @@ body {
                 }
             }
             #portfolio {
+                padding-top: 65px;
                 background-color: #38dcc8;
                 z-index: 9999;
-                padding-bottom: 100px;
+                padding-bottom: 153px;
                 // border: 1px solid #38dcc8;
                 // padding-top: 40px;
                 h2 {
@@ -367,20 +376,20 @@ body {
                     letter-spacing: 0.15em;
                 }
                 .container {
-                    .row{
-                        .col-md-4{
-                            .square{
+                    .row {
+                        .col-md-4 {
+                            .square {
                                 // border: 1px solid white;
                                 // width: 300px;
                                 // height: auto;
-                                .scale-img{
+                                .scale-img {
                                     overflow: hidden;
-                                    img{
+                                    img {
                                         transition: all 0.5s;
                                     }
                                 }
-                                &:hover{
-                                    img{
+                                &:hover {
+                                    img {
                                         transform: scale(1.3);
                                     }
                                 }
@@ -388,6 +397,92 @@ body {
                         }
                     }
                 }
+            }
+            #contact {
+                // padding-bottom: 95px;
+                h2 {
+                    padding-top: 60px;
+                    padding-bottom: 50px;
+                    margin: 0;
+
+                    font-family: Arial, Helvetica, sans-serif;
+                    // text-transform: uppercase;
+                    font-size: 60px;
+                    line-height: 1.2em;
+                    color: black;
+                    // font-family: fieldwork, sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    letter-spacing: 0.1em;
+                }
+                .container {
+                    .r1 {
+                        .left {
+                            color: gray;
+                            a {
+                                color: gray;
+                                &:hover {
+                                    color: #f44336;
+                                }
+                            }
+                            h4 {
+                                color: black;
+                            }
+                            p {
+                                padding: 0;
+                                text-align: justify;
+                                // font-family:;
+                            }
+                            ul {
+                                padding: 0px;
+                                li {
+                                    margin-bottom: 15px;
+                                    i {
+                                        height: 40px;
+                                        width: 40px;
+                                        background: #f44336;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        color: #fff;
+                                        border-radius: 50%;
+                                    }
+                                    span {
+                                        margin-left: 10px;
+                                        a {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right {
+                        }
+                    }
+                    .r2 {
+                        ul {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            li {
+                                margin: 10px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            // border: 1px solid rgba(0, 0, 0, .03);
+            background-color: #38dcc8;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            span {
+                font-family: 'Mulish', sans-serif;
+                color: white;
+                font-size: 14px;
+                // text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                // letter-spacing: 0.1em;
             }
         }
     }

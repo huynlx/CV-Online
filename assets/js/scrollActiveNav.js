@@ -35,6 +35,15 @@ $(document).ready(function () {
             $('#narbar a[href="#contact"]').removeClass('active');
         }
     });
+    $('#main').scroll(function () {
+        if ($('#main').scrollTop() > 2780) {
+            $('#narbar a[href="#about"]').removeClass('active');
+            $('#narbar a[href="#skills"]').removeClass('active');
+            $('#narbar a[href="#portfolio"]').removeClass('active');
+            $('#narbar a[href="#contact"]').addClass('active');
+        }
+    });
+
 
 
     $('a[href="#about"]').click(function () {

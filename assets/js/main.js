@@ -18,13 +18,13 @@ $(document).ready(function () {
     btn.click(function (e) {
         e.preventDefault();
         $("html,body,#main").css("scroll-behavior", "unset");
-        $('html,body,#main').animate({ scrollTop: 0 }, { duration: 1000, easing: "swing" });
+        $('html,body,#main').animate({ scrollTop: 0 }, { duration: 1100, easing: "swing" });
     });
 
     $('.nn1').click(function () {
         $("html,body,#main").css("scroll-behavior", "smooth");
     });
-    $('.down').click(function (e) {
+    $('.downn').click(function (e) {
         e.preventDefault();
         $("html,body,#main").css("scroll-behavior", "unset");
         $('#main').animate({

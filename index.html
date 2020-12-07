@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/animate.css" />
 
 
     <style>
@@ -53,13 +55,14 @@
         /* nav */
         #narbar {
             position: fixed;
-            top: -200px;
+            top: -100px;
             opacity: 0;
             visibility: hidden;
             transition: all 0.5s;
             display: flex;
             justify-content: space-around;
-
+            border-bottom: 1px solid rgba(0, 0, 0, .03);
+            /* border-bottom-color: ; */
         }
 
         #narbar h2 {
@@ -86,7 +89,7 @@
             /* margin-left: 30px; */
             color: gray;
             font-size: 14px;
-            transition: all 0.3s; 
+            transition: all 0.3s;
         }
 
         #narbar ul li a:hover {
@@ -116,6 +119,34 @@
             opacity: 1;
             visibility: visible;
         }
+
+        hr {
+            position: relative;
+            height: 1px;
+            background: white;
+            border: none;
+            outline: none;
+            margin: 3em 3em 5em;
+            bottom: 425px;
+        }
+
+        hr:before {
+            content: attr(data-symbol);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            background: black;
+            color: white;
+            padding: 0.5em 3em;
+            transform: translate(-50%, -50%);
+        }
+
+        hr#nine:before {
+            /* border: 1px solid white; */
+            padding: 1em 1.25em;
+            background-color: transparent;
+            /* border-radius: 50%; */
+        }
     </style>
 </head>
 
@@ -128,7 +159,7 @@
         <!-- <div class="jarallax team2" style="background-image:url(./91480c79dcdb86fff74484c9aa607c8a.jpg);"> -->
         <!-- <div class="team-dot h-100"> -->
         <!-- <div> -->
-        <header id="" class="jarallax team2 "
+        <header id="" class="jarallax team2"
             style="background-image:url(./assets/images/2797c870a7a4f11364b8851db24fbaa9.jpg);">
             <div class="header container">
                 <div class="logo">
@@ -146,10 +177,22 @@
                     </ul>
                 </nav>
             </div>
-
             <a href="#about">
-                <div class="down"></div>
+                <div class="animated downn bounce infinite text-center slow"
+                    style="animation-duration: 2s;position: absolute;bottom:50px;left: 48.2%;">
+                    <i class="fa fa-angle-down" aria-hidden="true" style="color: #FFFFFF;
+                    font-size: 2em;
+                    border: solid 1px #FFFFFF;
+                    width: 50px;
+                    height: 50px;
+                    padding: .25em 0 0 0;
+                    border-radius: 50%;"></i>
+                </div>
             </a>
+            <!-- <a href="#about">
+                <div class="down"></div>
+            </a> -->
+
         </header>
         <div class="slogan">
             <!-- <h1>BEST YASUO</h1> -->
@@ -159,7 +202,14 @@
                 </span><span style="letter-spacing:0.15em;">Huynh</span></p>
 
 
+
         </div>
+
+        <!-- <hr id="nine" data-symbol="‡"> -->
+
+        <!-- <div id="box" class="box"
+            style="width: 50px; height: 50px;background-color: white;clip-path: polygon(50% 100%, 0 0, 100% 0);">
+        </div> -->
 
         <div class="readmore">
             <p class="say" style="font-style: italic;">"Death is like the wind, always by my side"</p>
@@ -182,7 +232,8 @@
 
 
             <div class="">
-                <div id="about" class="n12 page-section">
+                <div id="about" class="n12 page-section"
+                    style="background: radial-gradient(100% 100% at top, transparent 0%, #38dcc8 51%);">
                     <div class="container">
                         <div class="row"
                             style="background-image: url(assets/images/2020704f3dff-a9e0-4f6e-a708-579ed6a3775a.webp);">
@@ -199,7 +250,8 @@
                                 <div class="square2 mx-auto">
                                     <div class="text">
 
-                                        <p>Xin chào! Tôi là Lê Xuân Huynh. I am a Fresher Web Developer. Mong muốn trở
+                                        <p style="font-style: italic;">Xin chào! Tôi là Lê Xuân Huynh. I am a Fresher
+                                            Web Developer. Mong muốn trở
                                             thành
                                             một Web Developer của công ty để nâng cao kinh nghiệm xây dựng website thỏa
                                             mãn đam mê. Học hỏi tích lũy kinh nghiệm khả năng từ các Anh/Chị trong công
@@ -220,7 +272,7 @@
 
 
                 <div class="jarallax team1" style="background-image:url(assets/images/GLUviaz.jpg);">
-                    <div class="team-dot" style="padding-bottom: 80px;">
+                    <div class="team-dot" style="padding-bottom: 100px;">
                         <div id="skills" class="n13 page-section">
                             <h2 id="" class=" text-center d-inline-block">My Skills</h2>
                             <div class="container-fluid">
@@ -352,11 +404,11 @@
                     <h2 id="" class="text-center">Portfolio</h2>
                     <div class="container">
                         <div class="agile-team-grids d-flex flex-row row">
-                            <div class="col-md-3 col-sm-6 col-12 team-grid">
+                            <div class="col-md-3 col-sm-6  team-grid">
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <img src="t1.jpg" alt="" class="img-fluid" />
+                                            <img class="img-fluid" src="t1.jpg" alt="" class="img-fluid" />
                                         </div>
                                         <div class="back">
                                             <h4>Project 1</h4>
@@ -372,11 +424,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3  col-sm-6 col-12 team-grid">
+                            <div class="col-md-3  col-sm-6  team-grid">
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <img src="t2.jpg" alt="" />
+                                            <img class="img-fluid" src="t2.jpg" alt="" />
                                         </div>
                                         <div class="back">
                                             <h4>Project 2</h4>
@@ -392,11 +444,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3  col-sm-6 col-12 team-grid">
+                            <div class="col-md-3  col-sm-6  team-grid">
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <img src="t3.jpg" alt="" />
+                                            <img class="img-fluid" src="t3.jpg" alt="" />
                                         </div>
                                         <div class="back">
                                             <h4>Project 3</h4>
@@ -412,11 +464,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3  col-sm-6 col-12 team-grid">
+                            <div class="col-md-3  col-sm-6  team-grid">
                                 <div class="flip-container">
                                     <div class="flipper">
                                         <div class="front">
-                                            <img src="t4.jpg" alt="" />
+                                            <img class="img-fluid" src="t4.jpg" alt="" />
                                         </div>
                                         <div class="back">
                                             <h4>Project 4</h4>
@@ -446,7 +498,56 @@
 
 
                 <div id="contact" class="n15 page-section">
-                    <h1 id="" class="text-center">Contact</h1>
+                    <h2 id="" class="text-center">Get In Touch</h2>
+                    <div class="container">
+                        <div class="row r1">
+                            <div class="col-md-6 left">
+                                <h4>GET IN TOUCH</h4>
+                                <br>
+                                <p>Pellentesque eget mi nec est tincidunt accumsan. Proin fermentum dignissim justo, vel
+                                    euismod justo sodales vel. In non condimentum mauris. Maecenas condimentum interdum
+                                    lacus, ac varius nisl dignissim ac. Vestibulum euismod est risus, quis convallis
+                                    nisi tincidunt eget. Sed ultricies congue lacus at fringilla.</p>
+                                <ul>
+                                    <li><i class="fa fa-phone" aria-hidden="true"></i> <span>+84 098392430</span></li>
+                                    <li><i class="fa fa-phone fa-envelope" aria-hidden="true"></i> <span><a
+                                                href="mailto:huynhlx62@wru.vn">Huynhlx62@wru.vn</a></span></li>
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> <span>Tổ 4, Phường Cự Khối,
+                                            Quận Long Biên, Hà Nội.</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 right">
+                                <h4>FIND ME HERE</h4>
+                                <div><iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14898.664546884584!2d105.893161278786!3d21.006016076169573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a9313eaa46f9%3A0xbaf6693480b5ecac!2zQ-G7sSBLaOG7kWksIExvbmcgQmnDqm4sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1607324323015!5m2!1svi!2s"
+                                        width="600" height="350" frameborder="0" style="border:0;" allowfullscreen=""
+                                        aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row r2">
+                            <div class="col-12">
+                                <ul style="margin-top: 1rem;padding: 0;">
+                                    <li><img alt="Facebook"
+                                            src="https://static.wixstatic.com/media/d3470ec8ca26475da4b228f0199b5d3d.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/d3470ec8ca26475da4b228f0199b5d3d.webp"
+                                            style="width: 20px; height: 20px; object-fit: cover;"></li>
+                                    <li><img alt="Twitter"
+                                            src="https://static.wixstatic.com/media/7177d158c36d432b93f51e54f80e2f3c.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/7177d158c36d432b93f51e54f80e2f3c.webp"
+                                            style="width: 20px; height: 20px; object-fit: cover;"></li>
+                                    <li><img alt="Instagram"
+                                            src="https://static.wixstatic.com/media/d7ffe259c9e54f59837481b3dd0130eb.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/d7ffe259c9e54f59837481b3dd0130eb.webp"
+                                            style="width: 20px; height: 20px; object-fit: cover;"></li>
+                                    <li><img alt="YouTube"
+                                            src="https://static.wixstatic.com/media/af037f3cc11741d1ada5c7f70d1074bf.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/af037f3cc11741d1ada5c7f70d1074bf.webp"
+                                            style="width: 20px; height: 20px; object-fit: cover;"></li>
+                                    <li><i class="fa fa-github" aria-hidden="true"
+                                            style="font-size: 17px; object-fit: cover;color: #9A9A9A;padding-top: 6px;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -457,7 +558,10 @@
         <div class="jarallax" id="">
         </div>
 
+        <div class="footer text-center">
 
+            <span>Copyright © 2020 created by Le Xuan Huynh</span>
+        </div>
 
 
     </div>
@@ -484,9 +588,7 @@
     </div>
 
 
-    <footer>
 
-    </footer>
 
 
     <!-- </main> -->
@@ -543,7 +645,7 @@
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/scrollActiveNav.js"></script>
     <script>
-       
+
 
     </script>
 

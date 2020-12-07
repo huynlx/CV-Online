@@ -25,7 +25,6 @@ div.down {
     height: 0;
     left: 50%;
     bottom: 20px;
-    top: 85%;
     transform: translate(-50%, -50%);
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
@@ -35,7 +34,7 @@ div.down {
 
 section {
     height: auto;
-    font-family: "Courier New", Courier, monospace;
+    /* font-family: "Courier New", Courier, monospace; */
     align-content: center;
     transform: translateZ(0);
     background: white;
