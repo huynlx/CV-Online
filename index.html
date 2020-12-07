@@ -16,24 +16,6 @@
 
 
     <style>
-        /* .scrolltop .icon {
-            font-size: 30px;
-            text-align: center;
-            transform: rotate(-45deg);
-            margin-top: 10px;
-        }
-
-        .scrolltop {
-            z-index: 999999;
-            position: fixed;
-            bottom: 70px;
-            right: 40px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #fff;
-            display: none;
-        } */
         /* width */
         ::-webkit-scrollbar {
             width: 9px;
@@ -55,38 +37,126 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #b30000;
         }
+
+        #toTop:active {
+            background-color: #555;
+        }
+
+        #toTop.show {
+            opacity: 1;
+            visibility: visible;
+            right: 40px;
+            background-color: transparent;
+        }
+
+
+        /* nav */
+        #narbar {
+            position: fixed;
+            top: -200px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        #narbar h2 {
+            margin-top: .5rem;
+            display: flex;
+            align-items: center;
+            padding-left: 100px;
+
+        }
+
+        #narbar ul {
+            margin-top: 1rem;
+            padding-right: 100px;
+        }
+
+        #narbar ul li {
+            list-style: none;
+            float: left;
+            margin-left: 30px;
+        }
+
+        #narbar ul li a {
+            /* display: inline-block; */
+            /* margin-left: 30px; */
+            color: gray;
+            font-size: 14px;
+            transition: all 0.3s; 
+        }
+
+        #narbar ul li a:hover {
+            color: #38DCC8;
+        }
+
+        #narbar ul li a.active {
+            /* border-bottom: 2px solid white; */
+            color: #38DCC8;
+        }
+
+        /* .page-section {
+            height: 300px;
+            width: 50%;
+            margin-left: 35%;
+            margin-top: 5%;
+            padding: 3em;
+            background: linear-gradient(45deg, #43cea2 10%, #185a9d 90%);
+            color: white;
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+        } */
+
+
+
+        #narbar.show {
+            top: 0;
+            opacity: 1;
+            visibility: visible;
+        }
     </style>
 </head>
 
 <body>
-    <main id="">
-        <div id="top">
-        </div>
-        <header>
+
+    <div id="main">
+        <div id="top" class="n11 page-section"></div>
+
+
+        <!-- <div class="jarallax team2" style="background-image:url(./91480c79dcdb86fff74484c9aa607c8a.jpg);"> -->
+        <!-- <div class="team-dot h-100"> -->
+        <!-- <div> -->
+        <header id="" class="jarallax team2 "
+            style="background-image:url(./assets/images/2797c870a7a4f11364b8851db24fbaa9.jpg);">
             <div class="header container">
                 <div class="logo">
-                    <h1 id="brand"><a class="" href="index.html" style="font-weight: bold;">HUYNH's CV</a></h1>
+                    <h1 id="brand"><a class="" href="index.html" style="font-weight: bold;">HUYNH's CV</a>
+                    </h1>
                 </div>
                 <nav class="nav navbar-default">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html" class="active">Home</a></li>
-                        <li><a href="#about" class="" onclick="$('').scrollIntoView();">About</a></li>
-                        <li><a href="#skills" class="" onclick="$('').scrollIntoView();">Skills</a></li>
-                        <li><a href="#portfolio" class="" onclick="$('').scrollIntoView();">Portfolio</a></li>
-                        <li><a href="#contact" class="" onclick="$('').scrollIntoView();">Contact</a></li>
+                        <li class="active"><a href="index.html" class="active" id="nav0">Home</a></li>
+                        <li><a class="" id="nav1">About</a></li>
+                        <li><a class="" id="nav2">Skills</a></li>
+                        <li><a class="" id="nav3">Portfolio</a>
+                        </li>
+                        <li><a class="" id="nav4">Contact</a></li>
                     </ul>
                 </nav>
             </div>
 
-            <div class="down" onClick="document.getElementById('about').scrollIntoView();"></div>
-
-
+            <a href="#about">
+                <div class="down"></div>
+            </a>
         </header>
         <div class="slogan">
             <!-- <h1>BEST YASUO</h1> -->
             <p class="" style="line-height:1.2em;"><span style="letter-spacing:0.15em;">Lê</span><span
                     style="letter-spacing:0em;"> </span><span style="letter-spacing:0.15em;">Xuân</span><span
-                    style="letter-spacing:0em;"> </span><span style="letter-spacing:0.15em;">Huynh</span></p>
+                    style="letter-spacing:0em;">
+                </span><span style="letter-spacing:0.15em;">Huynh</span></p>
 
 
         </div>
@@ -100,13 +170,22 @@
         </div>
 
 
+        <!-- </div> -->
+
+        <!-- </div> -->
+
+
+        <!-- </div> -->
+
+
         <section class="">
 
 
             <div class="">
-                <div id="about">
+                <div id="about" class="n12 page-section">
                     <div class="container">
-                        <div class="row">
+                        <div class="row"
+                            style="background-image: url(assets/images/2020704f3dff-a9e0-4f6e-a708-579ed6a3775a.webp);">
                             <div class="col-md-2 col-sm col"></div>
 
                             <div class="col-md-4 col-sm-12 col-12">
@@ -120,10 +199,12 @@
                                 <div class="square2 mx-auto">
                                     <div class="text">
 
-                                        <p>Xin chào! Tôi là Lê Xuân Huynh. I am a Fresher Web Developer. Mong muốn trở thành
+                                        <p>Xin chào! Tôi là Lê Xuân Huynh. I am a Fresher Web Developer. Mong muốn trở
+                                            thành
                                             một Web Developer của công ty để nâng cao kinh nghiệm xây dựng website thỏa
                                             mãn đam mê. Học hỏi tích lũy kinh nghiệm khả năng từ các Anh/Chị trong công
-                                            ty. Mong muốn trở thành nhân viên chính thức trong công ty và đem về cho công ty 1 tỉ đô lợi nhuận với thời gian
+                                            ty. Mong muốn trở thành nhân viên chính thức trong công ty và đem về cho
+                                            công ty 1 tỉ đô lợi nhuận với thời gian
                                             ngắn nhất.</p>
 
                                     </div>
@@ -138,195 +219,270 @@
                 </div>
 
 
-                <div id="skills">
-                    <h2 id="" class="text-center">My Skills</h2>
-                    <div class="container">
+                <div class="jarallax team1" style="background-image:url(assets/images/GLUviaz.jpg);">
+                    <div class="team-dot" style="padding-bottom: 80px;">
+                        <div id="skills" class="n13 page-section">
+                            <h2 id="" class=" text-center d-inline-block">My Skills</h2>
+                            <div class="container-fluid">
 
-                        <div class="row m-0 p-0">
-                            <div class="col-md-3 col-sm-12">
-                                <div class="square mx-auto">
-                                    <img class="img-fluid" src="./assets/images/download.png" alt="">
-                                    <span>HTML/HTML5</span>
+                                <div class="row m-0 p-0">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-2 col-sm-12">
+                                        <div class="square mx-auto">
+                                            <img class="img-fluid" src="./assets/images/download.png" alt="">
+
+                                            <div class="team-caption1 team-caption">
+
+                                            </div>
+                                            <span>HTML5</span>
+                                            <figcaption></figcaption>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-12">
+                                        <div class="square mx-auto"><img style="transform: scale(1.19);"
+                                                class="img-fluid" src="./assets/images/css3.svg" alt="">
+                                            <div class="team-caption2 team-caption">
+
+                                            </div><span>CSS3/SCSS</span>
+                                            <figcaption></figcaption>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-12">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/js-logo.png" alt="">
+                                            <div class="team-caption3 team-caption">
+
+                                            </div><span>JAVASCRIPT</span>
+                                            <figcaption></figcaption>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-12">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/jquery-logo-vertical_large_square.png" alt="">
+                                            <div class="team-caption4 team-caption">
+
+
+                                            </div><span>JQUERY</span>
+                                            <figcaption></figcaption>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-2 col-sm-12">
+                                        <div class="square mx-auto">
+                                            <img class="img-fluid" src="./assets/images/bootstrap-stack.png" alt=""
+                                                style="transform: scale(2);">
+
+                                            <div class="team-caption6 team-caption">
+
+                                            </div>
+                                            <span>BOOTSTRAP4</span>
+                                            <figcaption></figcaption>
+
+                                        </div>
+                                    </div>
+
+
                                 </div>
-                            </div>
-                            <div class="col-md-3 col-sm-12">
-                                <div class="square mx-auto"><img class="img-fluid" src="./assets/images/css3.svg"
-                                        alt=""><span>CSS/SCSS</span></div>
-                            </div>
-                            <div class="col-md-3 col-sm-12">
-                                <div class="square mx-auto"><img class="img-fluid" src="./assets/images/js-logo.png"
-                                        alt=""><span>JS</span></div>
-                            </div>
-                            <div class="col-md-3 col-sm-12">
-                                <div class="square mx-auto"><img class="img-fluid"
-                                        src="./assets/images/jquery-logo-vertical_large_square.png"
-                                        alt=""><span>JQUERY</span></div>
+                                <div class="row m-0 p-0">
+                                    <div class="col-md-1"></div>
+
+                                    <div class="col-md-2 col-sm-12">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/new-php-logo.svg" alt="">
+                                            <div class="team-caption5 team-caption">
+                                            </div><span>PHP</span>
+                                            <figcaption></figcaption>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-1"></div> -->
+                                    <div class="col-md-2 col-sm-12">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/MySQL-logo-17DB4E5FD6-seeklogo.com.png" alt="">
+                                            <div class="team-caption7 team-caption">
+
+                                            </div><span>MYSQL</span>
+                                            <figcaption></figcaption>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-12">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/44521256.png" alt="">
+                                            <div class="team-caption8 team-caption">
+
+                                            </div><span>CODEIGNITER3</span>
+                                            <figcaption></figcaption>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-12">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/1200px-Laravel.svg.png" alt="">
+                                            <div class="team-caption9 team-caption">
+
+
+                                            </div><span>LARAVEL</span>
+                                            <figcaption></figcaption>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-12">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/1200px-React-icon.svg.png" alt=""
+                                                style="transform: scale(1.6);">
+                                            <div class="team-caption10 team-caption">
+
+
+                                            </div><span>REACT JS</span>
+                                            <figcaption></figcaption>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1"></div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div id="portfolio">
+                <div id="portfolio" class="n14 page-section" style="background-color: black;">
                     <h2 id="" class="text-center">Portfolio</h2>
                     <div class="container">
-                        
-
-
-                        <p>Etiam semper, diam aliquam consequat rhoncus, augue quam semper erat, bibendum euismod urna
-                            nisi
-                            ac
-                            ex.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tristique viverra.
-                            Mauris
-                            venenatis, lorem sit amet vulputate tincidunt, dolor urna varius velit, vel aliquam erat
-                            lorem
-                            nec
-                            mi.
-                            Fusce at ornare turpis. Quisque consectetur, velit vel venenatis ultrices, nisl elit
-                            porttitor
-                            tellus,
-                            pharetra finibus eros odio in nisi. Cras tincidunt nulla ac pellentesque finibus. Curabitur
-                            interdum
-                            urna in tellus dapibus eleifend. In nec pellentesque odio, ut auctor leo. Phasellus vel nisi
-                            in
-                            nisi
-                            egestas mollis. In ornare eleifend pulvinar.</p>
+                        <div class="agile-team-grids d-flex flex-row row">
+                            <div class="col-md-3 col-sm-6 col-12 team-grid">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="t1.jpg" alt="" class="img-fluid" />
+                                        </div>
+                                        <div class="back">
+                                            <h4>Project 1</h4>
+                                            <p>Vestibulum </p>
+                                            <div class="w3l-social">
+                                                <ul>
+                                                    <li><a href="#" title="Github"><i class="fa fa-github"></i></a></li>
+                                                    <li><a href="#" title="Demo"><i class="fa fa-eye"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3  col-sm-6 col-12 team-grid">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="t2.jpg" alt="" />
+                                        </div>
+                                        <div class="back">
+                                            <h4>Project 2</h4>
+                                            <p>Quisque vitae</p>
+                                            <div class="w3l-social">
+                                                <ul>
+                                                    <li><a href="#" title="Github"><i class="fa fa-github"></i></a></li>
+                                                    <li><a href="#" title="Demo"><i class="fa fa-eye"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3  col-sm-6 col-12 team-grid">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="t3.jpg" alt="" />
+                                        </div>
+                                        <div class="back">
+                                            <h4>Project 3</h4>
+                                            <p>Nulla molestie</p>
+                                            <div class="w3l-social">
+                                                <ul>
+                                                    <li><a href="#" title="Github"><i class="fa fa-github"></i></a></li>
+                                                    <li><a href="#" title="Demo"><i class="fa fa-eye"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3  col-sm-6 col-12 team-grid">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img src="t4.jpg" alt="" />
+                                        </div>
+                                        <div class="back">
+                                            <h4>Project 4</h4>
+                                            <p>Aliquam non</p>
+                                            <div class="w3l-social">
+                                                <ul>
+                                                    <li><a href="#" title="Github"><i class="fa fa-github"></i></a></li>
+                                                    <li><a href="#" title="Demo"><i class="fa fa-eye"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- <div class="jarallax team2" style="background-image:url(./assets/images/c6d27ee5d7b8e9024136153b9940ea47.jpg);">
+                    <div class="team-dot h-100">
 
-                <div id="contact">
-                    <h1 id="">Contact</h1>
+                    </div>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget arcu et enim mattis
-                        tristique.
-                        Nullam
-                        a leo aliquet, tincidunt nibh sit amet, pellentesque mauris. Nunc quis tellus posuere, fermentum
-                        felis
-                        at, tristique leo. Praesent nec facilisis turpis. Praesent sit amet velit vitae libero mollis
-                        efficitur.
-                        Praesent rutrum erat quis facilisis dapibus. Curabitur nec tempus nibh, ac eleifend turpis.</p>
-                    <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur
-                        quis
-                        fermentum lectus. Duis lobortis mollis diam, id pellentesque sapien interdum sit amet. Quisque
-                        id
-                        malesuada leo. Vestibulum ac porttitor arcu. Duis at varius lacus. Integer in blandit ligula, in
-                        maximus
-                        elit. Nam odio quam, ultrices eget hendrerit nec, sagittis consectetur orci. Sed bibendum augue
-                        turpis,
-                        aliquet tempus tortor maximus non.</p>
-                    <p>Vestibulum suscipit volutpat semper. Vestibulum dictum enim arcu, ullamcorper aliquam mi rutrum
-                        a. In
-                        in
-                        ultrices quam, quis fringilla enim. Vestibulum vitae odio ligula. Phasellus urna urna, tristique
-                        vitae
-                        eros ac, laoreet pellentesque tellus. Fusce faucibus lobortis mauris a venenatis. Suspendisse ac
-                        eros ac
-                        lorem vehicula tempor vel sit amet ex. Duis dignissim mollis ullamcorper. Donec porta iaculis
-                        vestibulum. Proin efficitur tempor aliquet. Nunc nec fringilla lectus. Cras mollis in tortor eu
-                        fringilla. Aliquam sit amet dictum odio. Nunc vel eros mi.</p>
-                    <p>Nam auctor eu dolor vitae hendrerit. Vestibulum feugiat erat ac velit placerat, a euismod orci
-                        sagittis.
-                        Aenean mattis odio in magna blandit consequat. Praesent nulla tortor, lobortis eget velit vel,
-                        pharetra
-                        tempor mauris. Etiam lacinia at velit at rhoncus. Maecenas tristique dui aliquam dolor
-                        dignissim, at
-                        bibendum orci bibendum. Curabitur ligula felis, vestibulum sit amet aliquam sit amet, ultricies
-                        tincidunt elit. Vestibulum fringilla lacus in commodo venenatis. Suspendisse vitae quam at diam
-                        eleifend
-                        laoreet. Nam neque leo, venenatis ut lectus at, tristique suscipit tortor. Lorem ipsum dolor sit
-                        amet,
-                        consectetur adipiscing elit.</p>
-                    <p>Nam ac ultricies augue, in gravida dui. Ut accumsan, ante sed scelerisque eleifend, sem sapien
-                        tempus
-                        ligula, sit amet gravida eros velit venenatis risus. Pellentesque odio ante, lacinia ac
-                        dignissim
-                        in,
-                        ullamcorper nec libero. Nullam imperdiet eros tempor est finibus, ut eleifend metus iaculis. Nam
-                        ultrices laoreet purus, quis lobortis nisl tempor ac. Aenean ut ligula ante. Maecenas ac tempor
-                        felis.
-                        Vivamus accumsan nulla sed finibus efficitur. Aliquam vitae felis eu elit cursus blandit. Ut non
-                        ligula
-                        mattis, porta ex vitae, porta libero. Morbi ultrices, nunc eget scelerisque vestibulum, massa
-                        arcu
-                        blandit diam, a viverra risus leo vel sem. Suspendisse sit amet tortor ac risus pretium cursus
-                        eu et
-                        ipsum. Nullam mattis, libero blandit fermentum rutrum, massa nibh euismod odio, ac sodales
-                        tortor
-                        velit
-                        vitae nunc. Mauris laoreet urna eget placerat eleifend. Suspendisse at eros pharetra, eleifend
-                        sapien
-                        ut, bibendum lectus. Mauris in sodales est, a dapibus orci.</p>
-                    <p>Quisque et lacinia ex, a molestie mi. Nulla quis interdum purus. Integer placerat varius ex sit
-                        amet
-                        vestibulum. Duis a mi malesuada, interdum dui sed, sodales ante. Cras a ipsum metus. Phasellus
-                        dui
-                        orci,
-                        pharetra vel tortor ut, sodales fringilla mi. Phasellus eu velit non est fringilla rutrum.</p>
-                    <p>Mauris sagittis dui tortor, a fringilla risus suscipit vel. Aenean aliquet volutpat velit eu
-                        ultricies.
-                        Nulla sit amet diam nisl. Aenean et porttitor mauris. Cras pulvinar eu augue nec gravida.
-                        Maecenas
-                        ac
-                        nunc tincidunt, fermentum mauris vel, auctor mauris. Vestibulum ante ipsum primis in faucibus
-                        orci
-                        luctus et ultrices posuere cubilia curae; Nullam feugiat velit sed sollicitudin placerat. Sed
-                        tempor
-                        odio pharetra, porttitor urna vitae, sodales urna. Curabitur sodales erat vitae fringilla
-                        lacinia.
-                        Ut
-                        tellus leo, auctor et enim vitae, mollis accumsan ipsum. Donec sit amet purus vitae sapien
-                        varius
-                        eleifend sit amet nec mi.</p>
-                    <p>Mauris aliquam sagittis mollis. Cras nec eros vel nisl iaculis vulputate. Duis lacinia dictum
-                        metus
-                        quis
-                        iaculis. Integer non imperdiet enim, sit amet sollicitudin augue. Donec viverra tellus at sem
-                        mattis
-                        tristique. Nullam blandit eu justo quis mollis. Vivamus molestie diam sed turpis ullamcorper
-                        maximus.
-                        Morbi accumsan risus nibh, vel scelerisque ligula malesuada ut. Donec eu lacus non risus
-                        consectetur
-                        imperdiet.</p>
-                    <p>Nam eu lacus quis dolor commodo placerat ut ut arcu. Proin hendrerit efficitur sapien ac
-                        tincidunt.
-                        Aliquam nec placerat dolor, eu faucibus neque. Aenean egestas pretium felis convallis
-                        scelerisque.
-                        Nulla
-                        ultrices elit vel nisi varius blandit. Orci varius natoque penatibus et magnis dis parturient
-                        montes,
-                        nascetur ridiculus mus. Aenean ac turpis lectus. Nullam non nunc quis nisi cursus sagittis.
-                        Proin
-                        vestibulum rhoncus euismod. Proin ullamcorper, risus a aliquam sollicitudin, augue nulla lacinia
-                        augue,
-                        non imperdiet justo libero quis ex. Nunc venenatis nisi quam, eu tristique mi molestie sit amet.
-                        Etiam
-                        euismod leo nec urna convallis, in hendrerit turpis congue. Morbi fermentum purus nisl, vel
-                        iaculis
-                        lectus pharetra in. Nulla facilisi. Suspendisse accumsan ante sit amet congue mattis.</p>
-                    <p>Etiam semper, diam aliquam consequat rhoncus, augue quam semper erat, bibendum euismod urna nisi
-                        ac
-                        ex.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tristique viverra. Mauris
-                        venenatis, lorem sit amet vulputate tincidunt, dolor urna varius velit, vel aliquam erat lorem
-                        nec
-                        mi.
-                        Fusce at ornare turpis. Quisque consectetur, velit vel venenatis ultrices, nisl elit porttitor
-                        tellus,
-                        pharetra finibus eros odio in nisi. Cras tincidunt nulla ac pellentesque finibus. Curabitur
-                        interdum
-                        urna in tellus dapibus eleifend. In nec pellentesque odio, ut auctor leo. Phasellus vel nisi in
-                        nisi
-                        egestas mollis. In ornare eleifend pulvinar.</p>
+
+                </div> -->
+
+
+
+                <div id="contact" class="n15 page-section">
+                    <h1 id="" class="text-center">Contact</h1>
                 </div>
+
             </div>
+
         </section>
 
-    </main>
+        <!-- jarallax -->
+        <div class="jarallax" id="">
+        </div>
+
+
+
+
+    </div>
+
+
     <div id="toTop">
-        <a href="#top">
+        <a>
             <i class="fa fa-arrow-up" aria-hidden="true"></i>
         </a>
+        <a id="button"></a>
     </div>
+
+    <div>
+        <nav class="nav bg-white w-100" id="narbar">
+            <h2>HUYNH</h2>
+            <ul class="menu">
+                <li><a class="nav-link nn1" href="#top">Home</a></li>
+                <li><a class="nav-link nn1" href="#about">About</a></li>
+                <li><a class="nav-link nn1" href="#skills">Skills</a></li>
+                <li><a class="nav-link nn1" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link nn1" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
 
     <footer>
 
@@ -372,6 +528,7 @@
 
     <!-- //modal -->
 
+    <!-- Back to top button -->
 
 
 
@@ -382,7 +539,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/scrollActiveNav.js"></script>
+    <script>
+       
+
+    </script>
+
+
 
 </body>
 

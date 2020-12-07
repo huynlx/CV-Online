@@ -1,18 +1,18 @@
-body main header .header {
+body #main header .header {
   margin-top: 10px;
   display: flex;
   justify-content: space-between; }
-  body main header .header .logo h1 a {
+  body #main header .header .logo h1 a {
     color: white;
     text-decoration: none; }
-  body main header .header nav ul {
+  body #main header .header nav ul {
     display: flex;
     flex-direction: row; }
-    body main header .header nav ul li {
+    body #main header .header nav ul li {
       display: flex;
       justify-content: center;
       align-items: center; }
-      body main header .header nav ul li a {
+      body #main header .header nav ul li a {
         margin-left: 7px;
         color: white;
         text-decoration: none;
@@ -20,17 +20,17 @@ body main header .header {
         border-radius: 30px;
         padding: 9px 25px;
         transition: 0.3s; }
-        body main header .header nav ul li a:hover {
+        body #main header .header nav ul li a:hover {
           background-color: #e8676b;
           border: 1px solid #e8676b; }
-      body main header .header nav ul li a.active {
+      body #main header .header nav ul li a.active {
         color: white;
         text-decoration: none;
         border-radius: 30px;
         padding: 9px 25px;
         background-color: #e8676b;
         opacity: 0.8; }
-body main .slogan {
+body #main .slogan {
   text-transform: uppercase;
   font-weight: 100;
   margin: 0;
@@ -41,9 +41,9 @@ body main .slogan {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%); }
-body main .readmore {
+body #main .readmore {
   color: white; }
-  body main .readmore p.say {
+  body #main .readmore p.say {
     color: #ffffff;
     font-size: 1em;
     letter-spacing: 2px;
@@ -55,39 +55,37 @@ body main .readmore {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); }
-  body main .readmore a {
+  body #main .readmore a {
     border: 2px solid #e8676b;
     border-radius: 40px;
     padding: 6px 20px;
     margin: 0;
-    color: #e8676b;
     position: absolute;
     top: 70%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     transition: 0.3s; }
-    body main .readmore a:hover {
+    body #main .readmore a:hover {
       background-color: #e8676b;
       border: 2px solid #e8676b; }
-body main section {
+body #main section {
   padding: 0; }
-  body main section #about {
+  body #main section #about {
     background-color: #38dcc8; }
-body main .modal {
+body #main .modal {
   z-index: 9999; }
-body main section #about .container .row {
-  background-image: url("https://2.pik.vn/2020704f3dff-a9e0-4f6e-a708-579ed6a3775a.png");
+body #main section #about .container .row {
   background-repeat: no-repeat;
   background-position: 170px 150px; }
-  body main section #about .container .row .square1 {
+  body #main section #about .container .row .square1 {
     padding-left: 20px;
     padding-top: 10px;
     margin: 100px 10px;
     width: 330px;
     height: 364px;
     border: 11px solid white; }
-    body main section #about .container .row .square1 h2 {
+    body #main section #about .container .row .square1 h2 {
       font-family: Arial, Helvetica, sans-serif;
       text-transform: uppercase;
       font-size: 42px;
@@ -95,70 +93,164 @@ body main section #about .container .row {
       color: white;
       font-weight: 900;
       letter-spacing: 0.15em; }
-  body main section #about .container .row .square2 {
+  body #main section #about .container .row .square2 {
     display: flex;
     align-items: center;
     padding-left: 20px;
     margin: 100px 10px;
     width: 314px;
     height: 364px; }
-    body main section #about .container .row .square2 .text p {
+    body #main section #about .container .row .square2 .text p {
       line-height: 1.2em;
+      font-style: normal;
       color: white;
       text-align: justify; }
-body main section #skills {
-  padding-top: 40px; }
-  body main section #skills h2 {
+body #main section #skills {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  body #main section #skills h2 {
+    border: 5px solid white;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(to right, #11998e, #38ef7d);
     margin-bottom: 40px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 42px;
     line-height: 1.2em;
+    color: white;
     font-weight: 900;
     letter-spacing: 0.15em; }
-  body main section #skills .container .row .col-md-3.col-sm-12 {
+  body #main section #skills .container-fluid .row .col-md-2.col-sm-12 {
     margin-bottom: 10px;
     padding: 0; }
-    body main section #skills .container .row .col-md-3.col-sm-12 .square {
+    body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square {
+      background-color: white;
+      overflow: hidden;
+      position: relative;
+      top: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      max-width: 270px;
-      height: 400px;
+      max-width: 240px;
+      height: 300px;
       max-height: 400px;
-      box-shadow: 0 0 2px #717171; }
-      body main section #skills .container .row .col-md-3.col-sm-12 .square:hover {
-        box-shadow: 0 0 5px #333; }
-      body main section #skills .container .row .col-md-3.col-sm-12 .square img {
+      box-shadow: 0 0 10px #333;
+      transition: all 0.2s linear; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square img {
         max-width: 150px;
         height: auto; }
-      body main section #skills .container .row .col-md-3.col-sm-12 .square span {
-        margin-top: 10px;
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square .team-caption {
+        padding: 1em;
+        position: absolute;
+        left: 0;
+        bottom: -105%;
+        text-align: center;
+        width: 100%;
+        height: inherit;
+        transition: 0.4s all ease;
+        opacity: 1; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square .team-caption1 {
+        background: #e44d26; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square .team-caption2 {
+        background: #2062af; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square .team-caption3 {
+        background: #e9ca32; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square .team-caption4 {
+        background: #0868ab; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square .team-caption5 {
+        background: #777bb3; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square .team-caption6 {
+        background: #5b26a6; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square .team-caption7 {
+        background: #00688f; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square .team-caption8 {
+        background: #f04e37; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square .team-caption9 {
+        background: #ff291a; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square .team-caption10 {
+        background: #61dbfb; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square span {
+        margin: 0 auto;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
         font-weight: bold;
-        color: brown; }
-body main section #portfolio {
-  padding-top: 40px; }
-  body main section #portfolio h2 {
-    margin-bottom: 40px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        transition: all 0.5s; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square figcaption::before,
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square figcaption::after {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        content: "";
+        transition: opacity 0.35s, transform 0.7s; }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square figcaption::before {
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: scale(0, 1); }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square figcaption::after {
+        border-right: 2px solid #fff;
+        border-left: 2px solid #fff;
+        transform: scale(1, 0); }
+      body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square:hover {
+        box-shadow: 0px 14px 20px -5px rgba(4, 26, 90, 0.340773); }
+        body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square:hover .team-caption {
+          bottom: 0%;
+          opacity: 0.9; }
+        body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square:hover span {
+          font-size: 28px;
+          color: white;
+          opacity: 1;
+          visibility: visible; }
+        body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square:hover figcaption::before,
+        body #main section #skills .container-fluid .row .col-md-2.col-sm-12 .square:hover figcaption::after {
+          opacity: 1;
+          transform: scale(1); }
+body #main section #portfolio {
+  background-color: #38dcc8;
+  z-index: 9999;
+  padding-bottom: 100px; }
+  body #main section #portfolio h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 42px;
+    font-size: 60px;
     line-height: 1.2em;
-    font-weight: 900;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
     letter-spacing: 0.15em; }
+  body #main section #portfolio .container .row .col-md-4 .square .scale-img {
+    overflow: hidden; }
+    body #main section #portfolio .container .row .col-md-4 .square .scale-img img {
+      transition: all 0.5s; }
+  body #main section #portfolio .container .row .col-md-4 .square:hover img {
+    transform: scale(1.3); }
 body #toTop {
   position: fixed;
   top: 90%;
-  right: 50px; }
+  right: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s; }
   body #toTop a i {
     font-size: 19px;
     color: white;
     padding: 15px 15px;
     border-radius: 30px;
     background-color: #e8676b;
-    transition: 0.3s;
-    opacity: 0.8; }
+    transition: 0.3s; }
     body #toTop a i:hover {
       background-color: black; }
 
