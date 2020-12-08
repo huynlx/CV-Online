@@ -1,0 +1,78 @@
+@media screen and (max-width: 768px) {
+    body {
+        // background-color: red;
+        #main {
+            header {
+                .header {
+                    .logo {
+                        h1 {
+                            a {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                    .navbar-default {
+                        display: none;
+                        ul {
+                            li {
+                                a {
+                                }
+                            }
+                        }
+                    }
+                    .show-menu-btn {
+                        // position: absolute;
+                        // top: 50%;
+                        display: flex;
+                        align-items: center;
+                        opacity: 1;
+                        visibility: visible;
+                        font-size: 30px;
+                        padding-right: 5px;
+                    }
+                    #navbar-alt {
+                        // margin: 0;
+                        // padding: 0;
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        top: 0px;
+                        // flex-direction: column;
+                        // background-color: black;
+                        a {
+                            transition: all 0.3s;
+                            text-align: center;
+                            color: white;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                .block {
+                    left: 44.6%;
+                }
+            }
+            .slogan {
+                p {
+                    span {
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+        #nav2{
+            #narbar{
+                h2{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        // background-color: red;
+    }
+}

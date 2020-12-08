@@ -31,6 +31,34 @@ $(document).ready(function () {
             scrollTop: $('#about').offset().top
         }, { duration: 'slow', easing: "swing" });
     });
+    $('#alt1').click(function (e) {
+        e.preventDefault();
+        $("html,body,#main").css("scroll-behavior", "unset");
+        $('#main').animate({
+            scrollTop: $('#about').offset().top
+        }, { duration: 'slow', easing: "swing" });
+    });
+    $('#alt2').click(function (e) {
+        e.preventDefault();
+        $("html,body,#main").css("scroll-behavior", "unset");
+        $('#main').animate({
+            scrollTop: $('#skills').offset().top
+        }, { duration: 1000, easing: "swing" });
+    });
+    $('#alt3').click(function (e) {
+        e.preventDefault();
+        $("html,body,#main").css("scroll-behavior", "unset");
+        $('#main').animate({
+            scrollTop: $('#portfolio').offset().top
+        }, { duration: 1500, easing: "swing" });
+    });
+    $('#alt4').click(function (e) {
+        e.preventDefault();
+        $("html,body,#main").css("scroll-behavior", "unset");
+        $('#main').animate({
+            scrollTop: $('#contact').offset().top
+        }, { duration: 2000, easing: "swing" });
+    });
     // $('a.n1')
     //     .click(function (e) {
     //         e.preventDefault();

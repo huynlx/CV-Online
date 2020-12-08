@@ -147,6 +147,71 @@
             background-color: transparent;
             /* border-radius: 50%; */
         }
+
+        .block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 46.6%;
+            bottom: 170px;
+            margin: 300px auto 0;
+            width: 100px;
+            height: 100px;
+            /* background: linear-gradient(0deg, #000, #272727); */
+            background: none;
+            /* transition: all 0.3s; */
+            border: 2px solid white;
+        }
+
+
+
+        .block:hover::after,
+        .block:hover::before {
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            border-radius: 100%;
+            background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+                    #0000ff, #00ff00, #ffff00, #ff0000);
+            background-size: 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            animation: steam 20s linear infinite;
+        }
+
+        .block:hover {
+            /* color: red; */
+            /* font-size: 19.5px; */
+            /* font-weight: bold; */
+            border: none;
+            /* background: linear-gradient(0deg, #000, #272727); */
+            background-color: black;
+
+        }
+
+        .block:hover::after {
+            /* filter: blur(50px); */
+        }
+
+
+        @keyframes steam {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
     </style>
 </head>
 
@@ -176,6 +241,20 @@
                         <li><a class="" id="nav4">Contact</a></li>
                     </ul>
                 </nav>
+                <label for="chk" class="show-menu-btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+
+                <input type="checkbox" class="form-check-input" name="" id="chk">
+
+
+                <nav class="nav justify-content-center" id="navbar-alt">
+                    <a class="nav-link" id="alt0" style="padding-top: 1rem;">Home</a>
+                    <a class="nav-link" id="alt1" >About</a>
+                    <a class="nav-link" id="alt2" >Skills</a>
+                    <a class="nav-link" id="alt3" >Portfolio</a>
+                    <a class="nav-link" id="alt4" style="padding-bottom: 1rem;">Contact</a>
+                </nav>
             </div>
             <a href="#about">
                 <div class="animated downn bounce infinite text-center slow"
@@ -189,6 +268,9 @@
                     border-radius: 50%;"></i>
                 </div>
             </a>
+            <div type="button" data-toggle="modal" data-target="#exampleModal" class="block">
+                Introduce
+            </div>
             <!-- <a href="#about">
                 <div class="down"></div>
             </a> -->
@@ -214,9 +296,8 @@
         <div class="readmore">
             <p class="say" style="font-style: italic;">"Death is like the wind, always by my side"</p>
 
-            <a type="button" data-toggle="modal" data-target="#exampleModal">
-                Introduce
-            </a>
+
+            <!-- <div class="block"></div> -->
         </div>
 
 
@@ -423,6 +504,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <h2>1</h2>
                             </div>
                             <div class="col-md-3  col-sm-6  team-grid">
                                 <div class="flip-container">
@@ -443,6 +525,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <h2>2</h2>
                             </div>
                             <div class="col-md-3  col-sm-6  team-grid">
                                 <div class="flip-container">
@@ -463,6 +546,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <h2>3</h2>
                             </div>
                             <div class="col-md-3  col-sm-6  team-grid">
                                 <div class="flip-container">
@@ -483,6 +567,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <h2>4</h2>
                             </div>
                         </div>
                     </div>
@@ -574,7 +659,7 @@
         <a id="button"></a>
     </div>
 
-    <div>
+    <div id="nav2">
         <nav class="nav bg-white w-100" id="narbar">
             <h2>HUYNH</h2>
             <ul class="menu">
@@ -645,6 +730,26 @@
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/scrollActiveNav.js"></script>
     <script>
+        $(document).ready(function () {
+            $("#chk").change(function () {
+                if ($(this).is(':checked')) {
+                    // add the rest...
+                    $('#navbar-alt').slideDown('fast');
+
+                } else {
+                    $('#navbar-alt').slideUp('fast');
+                }
+            });
+            $(document).mouseup(function (e) {
+                var container = $("#navbar-alt");
+
+                // if the target of the click isn't the container nor a descendant of the container
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    container.slideUp('fast');
+                    $('#chk').prop('checked', false);
+                }
+            });
+        });
 
 
     </script>

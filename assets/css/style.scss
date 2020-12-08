@@ -1,3 +1,4 @@
+// @media screen and (min-width: 1280px) {
 body {
     li {
         list-style: none;
@@ -62,6 +63,31 @@ body {
                         }
                     }
                 }
+                .show-menu-btn {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                #navbar-alt {
+                    margin: 0;
+                    padding: 0;
+                    position: absolute;
+                    // width: 100%;
+                    // left: 0;
+                    // top: -150px;
+                    flex-direction: column;
+                    background-color: black;
+                    a {
+                        text-align: center;
+                        color: white;
+                    }
+                }
+                #navbar-alt{
+                    display: none;
+                }
+                #chk{
+                    opacity: 0;
+                    visibility: hidden;
+                }
             }
         }
         .slogan {
@@ -91,23 +117,26 @@ body {
                 margin-right: -50%;
                 transform: translate(-50%, -50%);
             }
-            a {
-                border: 2px solid #e8676b;
-                border-radius: 40px;
-                padding: 6px 20px;
-                margin: 0;
-                // color: #e8676b;
-                position: absolute;
-                top: 70%;
-                left: 50%;
-                margin-right: -50%;
-                transform: translate(-50%, -50%);
-                transition: 0.3s;
-                &:hover {
-                    background-color: #e8676b;
-                    border: 2px solid #e8676b;
-                }
-            }
+            // a {
+            //     border: 2px solid #e8676b;
+            //     border-radius: 100%;
+            //     padding: 35px 16px;
+            //     margin: 0;
+            //     height: 100px;
+            //     width: 100px;
+
+            //     // color: #e8676b;
+            //     position: absolute;
+            //     top: 70%;
+            //     left: 50%;
+            //     margin-right: -50%;
+            //     transform: translate(-50%, -50%);
+            //     transition: 0.3s;
+            //     &:hover {
+            //         background-color: black;
+            //         border: 2px solid #e8676b;
+            //     }
+            // }
         }
         section {
             padding: 0;
@@ -377,22 +406,13 @@ body {
                 }
                 .container {
                     .row {
-                        .col-md-4 {
-                            .square {
-                                // border: 1px solid white;
-                                // width: 300px;
-                                // height: auto;
-                                .scale-img {
-                                    overflow: hidden;
-                                    img {
-                                        transition: all 0.5s;
-                                    }
-                                }
-                                &:hover {
-                                    img {
-                                        transform: scale(1.3);
-                                    }
-                                }
+                        .col-md-3 {
+                            h2 {
+                                margin: 0;
+                                position: absolute;
+                                top: 120%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
                             }
                         }
                     }
@@ -478,7 +498,7 @@ body {
             padding-top: 10px;
             padding-bottom: 10px;
             span {
-                font-family: 'Mulish', sans-serif;
+                font-family: "Mulish", sans-serif;
                 color: white;
                 font-size: 14px;
                 // text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -511,3 +531,4 @@ body {
         }
     }
 }
+// }

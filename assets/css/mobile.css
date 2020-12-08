@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+  body #main header .header .logo h1 a {
+    font-size: 2rem; }
+  body #main header .header .navbar-default {
+    display: none; }
+  body #main header .header .show-menu-btn {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    font-size: 30px;
+    padding-right: 5px; }
+  body #main header .header #navbar-alt {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0px; }
+    body #main header .header #navbar-alt a {
+      transition: all 0.3s;
+      text-align: center;
+      color: white; }
+      body #main header .header #navbar-alt a:hover {
+        color: red; }
+  body #main header .block {
+    left: 44.6%; }
+  body #main .slogan p span {
+    font-size: 50px; }
+  body #nav2 #narbar h2 {
+    display: none; } }
+
+/*# sourceMappingURL=mobile.css.map */
