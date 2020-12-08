@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Cv</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png"
+        href="https://yt3.ggpht.com/ytc/AAUvwng1mEXQg8LrH_cyD7ntn_5B87gG-hlyP-q6hOZ5Lg=s176-c-k-c0x00ffffff-no-rj-mo">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 9px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #e8676b;
+            border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b30000;
+        }
+
+        #toTop:active {
+            background-color: #555;
+        }
+
+        #toTop.show {
+            opacity: 1;
+            visibility: visible;
+            right: 40px;
+            background-color: transparent;
+        }
+
+
+        /* nav */
+        #narbar {
+            position: fixed;
+            top: -100px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s;
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid rgba(0, 0, 0, .03);
+            /* border-bottom-color: ; */
+        }
+
+        #narbar h2 {
+            margin-top: .5rem;
+            display: flex;
+            align-items: center;
+            padding-left: 100px;
+
+        }
+
+        #narbar ul {
+            margin-top: 1rem;
+            padding-right: 100px;
+        }
+
+        #narbar ul li {
+            list-style: none;
+            float: left;
+            margin-left: 30px;
+        }
+
+        #narbar ul li a {
+            /* display: inline-block; */
+            /* margin-left: 30px; */
+            color: gray;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        #narbar ul li a:hover {
+            color: #38DCC8;
+        }
+
+        #narbar ul li a.active {
+            /* border-bottom: 2px solid white; */
+            color: #38DCC8;
+        }
+
+        /* .page-section {
+            height: 300px;
+            width: 50%;
+            margin-left: 35%;
+            margin-top: 5%;
+            padding: 3em;
+            background: linear-gradient(45deg, #43cea2 10%, #185a9d 90%);
+            color: white;
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+        } */
+
+
+
+        #narbar.show {
+            top: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        hr {
+            position: relative;
+            height: 1px;
+            background: white;
+            border: none;
+            outline: none;
+            margin: 3em 3em 5em;
+            bottom: 425px;
+        }
+
+        hr:before {
+            content: attr(data-symbol);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            background: black;
+            color: white;
+            padding: 0.5em 3em;
+            transform: translate(-50%, -50%);
+        }
+
+        hr#nine:before {
+            /* border: 1px solid white; */
+            padding: 1em 1.25em;
+            background-color: transparent;
+            /* border-radius: 50%; */
+        }
+
+        .block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 46.6%;
+            bottom: 170px;
+            margin: 300px auto 0;
+            width: 100px;
+            height: 100px;
+            background: none;
+            border: 2px solid white;
+        }
+
+
+
+        .block:hover::after,
+        .block:hover::before {
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            border-radius: 100%;
+            background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+                    #0000ff, #00ff00, #ffff00, #ff0000);
+            background-size: 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            animation: steam 20s linear infinite;
+        }
+
+        .block:hover {
+            border: none;
+            background-color: black;
+
+        }
+
+        .block:hover::after {
+            /* filter: blur(50px); */
+        }
+
+
+        @keyframes steam {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="top" class="n11 page-section"></div>
+
+
+        <!-- <div class="jarallax team2" style="background-image:url(./91480c79dcdb86fff74484c9aa607c8a.jpg);"> -->
+        <!-- <div class="team-dot h-100"> -->
+        <!-- <div> -->
+        <header id="" class="jarallax team2"
+            style="background-image:url(./assets/images/2797c870a7a4f11364b8851db24fbaa9.jpg);">
+            <div class="header container">
+                <div class="logo">
+                    <h1 id="brand"><a class="" href="index.html" style="font-weight: bold;">HUYNH's CV</a>
+                    </h1>
+                </div>
+                <nav class="nav navbar-default">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html" class="active" id="nav0">Home</a></li>
+                        <li><a class="" id="nav1">About</a></li>
+                        <li><a class="" id="nav2">Skills</a></li>
+                        <li><a class="" id="nav3">Portfolio</a>
+                        </li>
+                        <li><a class="" id="nav4">Contact</a></li>
+                    </ul>
+                </nav>
+                <label for="chk" class="show-menu-btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+
+                <input type="checkbox" class="form-check-input" name="" id="chk">
+
+
+                <nav class="nav justify-content-center" id="navbar-alt">
+                    <a class="nav-link" id="alt0" style="padding-top: 1rem;">Home</a>
+                    <a class="nav-link" id="alt1" >About</a>
+                    <a class="nav-link" id="alt2" >Skills</a>
+                    <a class="nav-link" id="alt3" >Portfolio</a>
+                    <a class="nav-link" id="alt4" style="padding-bottom: 1rem;">Contact</a>
+                </nav>
+            </div>
+            <a href="#about">
+                <div class="animated downn bounce infinite text-center slow"
+                    style="animation-duration: 2s;position: absolute;bottom:50px;">
+                    <i class="fa fa-angle-down" aria-hidden="true" style="color: #FFFFFF;
+                    font-size: 2em;
+                    border: solid 1px #FFFFFF;
+                    width: 50px;
+                    height: 50px;
+                    padding: .25em 0 0 0;
+                    border-radius: 50%;"></i>
+                </div>
+            </a>
+            <div type="button" data-toggle="modal" data-target="#exampleModal" class="block">
+                Introduce
+            </div>
+            <!-- <a href="#about">
+                <div class="down"></div>
+            </a> -->
+
+        </header>
+        <div class="slogan">
+            <!-- <h1>BEST YASUO</h1> -->
+            <p class="" style="line-height:1.2em;"><span style="letter-spacing:0.15em;">Lê</span><span
+                    style="letter-spacing:0em;"> </span><span style="letter-spacing:0.15em;">Xuân</span><span
+                    style="letter-spacing:0em;">
+                </span><span style="letter-spacing:0.15em;">Huynh</span></p>
+
+
+
+        </div>
+
+        <!-- <hr id="nine" data-symbol="‡"> -->
+
+        <!-- <div id="box" class="box"
+            style="width: 50px; height: 50px;background-color: white;clip-path: polygon(50% 100%, 0 0, 100% 0);">
+        </div> -->
+
+        <div class="readmore">
+            <p class="say" style="font-style: italic;">"Death is like the wind, always by my side"</p>
+
+
+            <!-- <div class="block"></div> -->
+        </div>
+
+
+        <!-- </div> -->
+
+        <!-- </div> -->
+
+
+        <!-- </div> -->
+
+
+        <section class="">
+
+
+            <div class="">
+                <div id="about" class="n12 page-section"
+                    style="background: radial-gradient(100% 100% at top, transparent 0%, #38dcc8 51%);">
+                    <div class="container">
+                        <div class="row"
+                            style="background-image: url(assets/images/2020704f3dff-a9e0-4f6e-a708-579ed6a3775a.webp);">
+                            <div class="col-lg-2 col-sm col-md-0"></div>
+
+                            <div class="col-md-6 col-lg-4 col-sm-12 col-12">
+                                <div class="square1 mx-auto">
+                                    <h2>About</h2>
+                                    <h2>Me!</h2>
+                                </div>
+                            </div>
+                            <!-- <div class="col-1"></div> -->
+                            <div class="col-md-6 col-lg-4 col-sm-12 col-12 ">
+                                <div class="square2 mx-auto">
+                                    <div class="text">
+
+                                        <p style="font-style: italic;">Xin chào! Tôi là Lê Xuân Huynh. I am a Fresher
+                                            Web Developer. Mong muốn trở
+                                            thành
+                                            một Web Developer của công ty để nâng cao kinh nghiệm xây dựng website thỏa
+                                            mãn đam mê. Học hỏi tích lũy kinh nghiệm khả năng từ các Anh/Chị trong công
+                                            ty. Mong muốn trở thành nhân viên chính thức trong công ty và đem về cho
+                                            công ty 1 tỉ đô lợi nhuận với thời gian
+                                            ngắn nhất.</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm col-md-0"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="jarallax team1" style="background-image:url(assets/images/GLUviaz.jpg);">
+                    <div class="team-dot" style="padding-bottom: 100px;">
+                        <div id="skills" class="n13 page-section">
+                            <h2 id="" class="text-center d-inline-block">My Skills</h2>
+                            <div class="container-fluid">
+
+                                <div class="row m-0 p-0">
+                                    <!-- <div class="col-md-1"></div> -->
+                                    <div class="col-sm-6 col-md-2 col-lg-2 cc">
+                                        <div class="square mx-auto">
+                                            <img class="img-fluid" src="./assets/images/download.png" alt="" width="150" height="150">
+
+                                            <div class="team-caption1 team-caption">
+
+                                            </div>
+                                            <span>HTML5</span>
+                                            <figcaption></figcaption>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 col-lg-2">
+                                        <div class="square mx-auto"><img style="/*transform: scale(1.19);*/"
+                                                class="img-fluid" src="./assets/images/css3.svg" alt="" width="150" height="150">
+                                            <div class="team-caption2 team-caption">
+
+                                            </div><span>CSS3/SCSS</span>
+                                            <figcaption></figcaption>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 col-lg-2">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/js-logo.png" alt="" width="150" height="150">
+                                            <div class="team-caption3 team-caption">
+
+                                            </div><span>JAVASCRIPT</span>
+                                            <figcaption></figcaption>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 col-lg-2">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/jquery-logo-vertical_large_square.png" alt="" width="150" height="150">
+                                            <div class="team-caption4 team-caption">
+
+
+                                            </div><span>JQUERY</span>
+                                            <figcaption></figcaption>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 col-lg-2">
+                                        <div class="square mx-auto">
+                                            <img class="img-fluid" src="./assets/images/bootstrap-stack.png" alt=""
+                                                style="/*transform: scale(2);*/" width="150" height="150">
+
+                                            <div class="team-caption6 team-caption">
+
+                                            </div>
+                                            <span>BOOTSTRAP4</span>
+                                            <figcaption></figcaption>
+
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-1 col-sm-0"></div> -->
+                                    <!-- <div class="col-md-1"></div> -->
+
+                                    
+
+
+                                <!-- </div> -->
+                                <!-- <div class="row m-0 p-0"> -->
+                                    
+                                    <!-- <div class="col-md-1 cil-sm-0"></div> -->
+                                    <div class="col-sm-6 col-md-2 col-lg-2 cc">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/new-php-logo.svg" alt="" width="150" height="150">
+                                            <div class="team-caption5 team-caption">
+                                            </div><span>PHP</span>
+                                            <figcaption></figcaption>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-1"></div> -->
+                                    <div class="col-sm-6 col-md-2 col-lg-2">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/MySQL-logo-17DB4E5FD6-seeklogo.com.png" alt="" width="150" height="150">
+                                            <div class="team-caption7 team-caption">
+
+                                            </div><span>MYSQL</span>
+                                            <figcaption></figcaption>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 col-lg-2">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/44521256.png" alt="" width="150" height="150">
+                                            <div class="team-caption8 team-caption">
+
+                                            </div><span>CODEIGNITER3</span>
+                                            <figcaption></figcaption>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 col-lg-2">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/1200px-Laravel.svg.png" alt="" width="150" height="150">
+                                            <div class="team-caption9 team-caption">
+
+
+                                            </div><span>LARAVEL</span>
+                                            <figcaption></figcaption>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 col-lg-2">
+                                        <div class="square mx-auto"><img class="img-fluid"
+                                                src="./assets/images/1200px-React-icon.svg.png" alt=""
+                                                style="/*transform: scale(1.6);*/" width="150" height="150">
+                                            <div class="team-caption10 team-caption">
+
+
+                                            </div><span>REACT JS</span>
+                                            <figcaption></figcaption>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="portfolio" class="n14 page-section" style="background-color: black;">
+                    <h2 id="" class="text-center">Portfolio</h2>
+                    <div class="container">
+                        <div class="agile-team-grids d-flex flex-row row">
+                            <div class="col-md-3 col-sm-6  team-grid">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img class="img-fluid" src="t1.jpg" alt="" class="img-fluid" />
+                                        </div>
+                                        <div class="back">
+                                            <h4>Project 1</h4>
+                                            <p>Vestibulum </p>
+                                            <div class="w3l-social">
+                                                <ul>
+                                                    <li><a href="#" title="Github"><i class="fa fa-github"></i></a></li>
+                                                    <li><a href="#" title="Demo"><i class="fa fa-eye"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>1</h2>
+                            </div>
+                            <div class="col-md-3  col-sm-6  team-grid">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img class="img-fluid" src="t2.jpg" alt="" />
+                                        </div>
+                                        <div class="back">
+                                            <h4>Project 2</h4>
+                                            <p>Quisque vitae</p>
+                                            <div class="w3l-social">
+                                                <ul>
+                                                    <li><a href="#" title="Github"><i class="fa fa-github"></i></a></li>
+                                                    <li><a href="#" title="Demo"><i class="fa fa-eye"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>2</h2>
+                            </div>
+                            <div class="col-md-3  col-sm-6  team-grid">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img class="img-fluid" src="t3.jpg" alt="" />
+                                        </div>
+                                        <div class="back">
+                                            <h4>Project 3</h4>
+                                            <p>Nulla molestie</p>
+                                            <div class="w3l-social">
+                                                <ul>
+                                                    <li><a href="#" title="Github"><i class="fa fa-github"></i></a></li>
+                                                    <li><a href="#" title="Demo"><i class="fa fa-eye"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>3</h2>
+                            </div>
+                            <div class="col-md-3  col-sm-6  team-grid">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <img class="img-fluid" src="t4.jpg" alt="" />
+                                        </div>
+                                        <div class="back">
+                                            <h4>Project 4</h4>
+                                            <p>Aliquam non</p>
+                                            <div class="w3l-social">
+                                                <ul>
+                                                    <li><a href="#" title="Github"><i class="fa fa-github"></i></a></li>
+                                                    <li><a href="#" title="Demo"><i class="fa fa-eye"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>4</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="jarallax team2" style="background-image:url(./assets/images/c6d27ee5d7b8e9024136153b9940ea47.jpg);">
+                    <div class="team-dot h-100">
+
+                    </div>
+
+
+                </div> -->
+
+
+
+                <div id="contact" class="n15 page-section">
+                    <h2 id="" class="text-center">Get In Touch</h2>
+                    <div class="container">
+                        <div class="row r1">
+                            <div class="col-md-6 left">
+                                <h4>GET IN TOUCH</h4>
+                                <br>
+                                <p>Pellentesque eget mi nec est tincidunt accumsan. Proin fermentum dignissim justo, vel
+                                    euismod justo sodales vel. In non condimentum mauris. Maecenas condimentum interdum
+                                    lacus, ac varius nisl dignissim ac. Vestibulum euismod est risus, quis convallis
+                                    nisi tincidunt eget. Sed ultricies congue lacus at fringilla.</p>
+                                <ul>
+                                    <li><i class="fa fa-phone" aria-hidden="true"></i> <span>+84 098392430</span></li>
+                                    <li><i class="fa fa-phone fa-envelope" aria-hidden="true"></i> <span><a
+                                                href="mailto:huynhlx62@wru.vn">Huynhlx62@wru.vn</a></span></li>
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> <span>Tổ 4, Phường Cự Khối,
+                                            Quận Long Biên, Hà Nội.</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 right">
+                                <h4>FIND ME HERE</h4>
+                                <div><iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14898.664546884584!2d105.893161278786!3d21.006016076169573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a9313eaa46f9%3A0xbaf6693480b5ecac!2zQ-G7sSBLaOG7kWksIExvbmcgQmnDqm4sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1607324323015!5m2!1svi!2s"
+                                        width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""
+                                        aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row r2">
+                            <div class="col-12">
+                                <ul style="margin-top: 1rem;padding: 0;">
+                                    <li><img alt="Facebook"
+                                            src="https://static.wixstatic.com/media/d3470ec8ca26475da4b228f0199b5d3d.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/d3470ec8ca26475da4b228f0199b5d3d.webp"
+                                            style="width: 20px; height: 20px; object-fit: cover;"></li>
+                                    <li><img alt="Twitter"
+                                            src="https://static.wixstatic.com/media/7177d158c36d432b93f51e54f80e2f3c.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/7177d158c36d432b93f51e54f80e2f3c.webp"
+                                            style="width: 20px; height: 20px; object-fit: cover;"></li>
+                                    <li><img alt="Instagram"
+                                            src="https://static.wixstatic.com/media/d7ffe259c9e54f59837481b3dd0130eb.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/d7ffe259c9e54f59837481b3dd0130eb.webp"
+                                            style="width: 20px; height: 20px; object-fit: cover;"></li>
+                                    <li><img alt="YouTube"
+                                            src="https://static.wixstatic.com/media/af037f3cc11741d1ada5c7f70d1074bf.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/af037f3cc11741d1ada5c7f70d1074bf.webp"
+                                            style="width: 20px; height: 20px; object-fit: cover;"></li>
+                                    <li><i class="fa fa-github" aria-hidden="true"
+                                            style="font-size: 17px; object-fit: cover;color: #9A9A9A;padding-top: 6px;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- jarallax -->
+        <div class="jarallax" id="">
+        </div>
+
+        <div class="footer text-center">
+
+            <span>Copyright © 2020 created by Le Xuan Huynh</span>
+        </div>
+
+
+    </div>
+
+
+    <div id="toTop">
+        <a>
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </a>
+        <a id="button"></a>
+    </div>
+
+    <div id="nav2">
+        <nav class="nav bg-white w-100" id="narbar">
+            <h2>HUYNH</h2>
+            <ul class="menu">
+                <li><a class="nav-link nn1" href="#top">Home</a></li>
+                <li><a class="nav-link nn1" href="#about">About</a></li>
+                <li><a class="nav-link nn1" href="#skills">Skills</a></li>
+                <li><a class="nav-link nn1" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link nn1" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+    <!-- </main> -->
+
+
+
+
+    <!-- <div id="back-to-top button" style="position: fixed;
+    top: 90%;
+    right: 50px;border: 1px solid red;padding:10px 10px;">
+        <i class="fa fa-arrow-up" style="color: red;"></i>
+    </div> -->
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Super Man</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pb-1">
+                    <div class="agileits-w3layouts-info">
+                        <img class="img-fluid"
+                            src="https://i.pinimg.com/originals/27/97/c8/2797c870a7a4f11364b8851db24fbaa9.jpg" alt="" />
+                        <p class="m-0">I'm Huynh. And i am Super Man !</p>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- //modal -->
+
+    <!-- Back to top button -->
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/scrollActiveNav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#chk").change(function () {
+                if ($(this).is(':checked')) {
+                    // add the rest...
+                    $('#navbar-alt').slideDown('fast');
+
+                } else {
+                    $('#navbar-alt').slideUp('fast');
+                }
+            });
+            $(document).mouseup(function (e) {
+                var container = $("#navbar-alt");
+
+                // if the target of the click isn't the container nor a descendant of the container
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    container.slideUp('fast');
+                    $('#chk').prop('checked', false);
+                }
+            });
+        });
+
+
+    </script>
+
+
+
+</body>
+
+</html>

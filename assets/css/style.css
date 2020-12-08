@@ -1,0 +1,319 @@
+body li {
+  list-style: none; }
+body #main header {
+  width: 100vw; }
+  body #main header .header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between; }
+    body #main header .header .logo h1 a {
+      color: white;
+      text-decoration: none; }
+    body #main header .header nav ul {
+      display: flex;
+      flex-direction: row; }
+      body #main header .header nav ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body #main header .header nav ul li a {
+          margin-left: 7px;
+          color: white;
+          text-decoration: none;
+          border: 1px solid transparent;
+          border-radius: 30px;
+          padding: 9px 25px;
+          transition: 0.3s; }
+          body #main header .header nav ul li a:hover {
+            background-color: #e8676b;
+            border: 1px solid #e8676b; }
+        body #main header .header nav ul li a.active {
+          color: white;
+          text-decoration: none;
+          border-radius: 30px;
+          padding: 9px 25px;
+          background-color: #e8676b;
+          opacity: 0.8; }
+    body #main header .header .show-menu-btn {
+      display: none;
+      opacity: 0;
+      visibility: hidden; }
+      body #main header .header .show-menu-btn i {
+        color: white; }
+    body #main header .header #navbar-alt {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      flex-direction: column;
+      background-color: black; }
+      body #main header .header #navbar-alt a {
+        text-align: center;
+        color: white; }
+    body #main header .header #navbar-alt {
+      display: none; }
+    body #main header .header #chk {
+      opacity: 0;
+      visibility: hidden; }
+body #main .slogan {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0;
+  font-size: 6em;
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+body #main .readmore {
+  color: white; }
+  body #main .readmore p.say {
+    color: #ffffff;
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding: 6px 20px;
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+body #main section {
+  padding: 0; }
+  body #main section #about {
+    padding-top: 50px;
+    background-color: #38dcc8; }
+body #main .modal {
+  z-index: 9999; }
+body #main section #about .container .row {
+  background-repeat: no-repeat;
+  background-position: 170px 150px; }
+  body #main section #about .container .row .square1 {
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 100px 10px;
+    width: 330px;
+    height: 364px;
+    border: 11px solid white; }
+    body #main section #about .container .row .square1 h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-size: 42px;
+      line-height: 1.2em;
+      color: white;
+      font-weight: 900;
+      letter-spacing: 0.15em; }
+  body #main section #about .container .row .square2 {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin: 100px 10px;
+    width: 314px;
+    height: 364px; }
+    body #main section #about .container .row .square2 .text p {
+      line-height: 1.4em;
+      color: white;
+      text-align: justify; }
+body #main section #skills {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  body #main section #skills h2 {
+    border: 5px solid white;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 1.2em;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 0.15em; }
+  body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 {
+    margin-bottom: 10px;
+    padding: 0; }
+    body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square {
+      background-color: white;
+      overflow: hidden;
+      position: relative;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      max-width: 240px;
+      height: 300px;
+      box-shadow: 0 0 10px #333;
+      transition: all 0.2s linear; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square .team-caption {
+        padding: 1em;
+        position: absolute;
+        left: 0;
+        bottom: -105%;
+        text-align: center;
+        width: 100%;
+        height: inherit;
+        transition: 0.4s all ease;
+        opacity: 1; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square .team-caption1 {
+        background: #e44d26; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square .team-caption2 {
+        background: #2062af; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square .team-caption3 {
+        background: #e9ca32; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square .team-caption4 {
+        background: #0868ab; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square .team-caption5 {
+        background: #777bb3; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square .team-caption6 {
+        background: #5b26a6; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square .team-caption7 {
+        background: #00688f; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square .team-caption8 {
+        background: #f04e37; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square .team-caption9 {
+        background: #ff291a; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square .team-caption10 {
+        background: #61dbfb; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square span {
+        margin: 0 auto;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        font-weight: bold;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        transition: all 0.5s; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square figcaption::before,
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square figcaption::after {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        content: "";
+        transition: opacity 0.35s, transform 0.7s; }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square figcaption::before {
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: scale(0, 1); }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square figcaption::after {
+        border-right: 2px solid #fff;
+        border-left: 2px solid #fff;
+        transform: scale(1, 0); }
+      body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square:hover {
+        box-shadow: 0px 14px 20px -5px rgba(4, 26, 90, 0.340773); }
+        body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square:hover .team-caption {
+          bottom: 0%;
+          opacity: 0.9; }
+        body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square:hover span {
+          font-size: 28px;
+          color: white;
+          opacity: 1;
+          visibility: visible; }
+        body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square:hover figcaption::before,
+        body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square:hover figcaption::after {
+          opacity: 1;
+          transform: scale(1); }
+  body #main section #skills .container-fluid .row .cc {
+    margin-left: 0; }
+body #main section #portfolio {
+  padding-top: 65px;
+  background-color: #38dcc8;
+  z-index: 9999;
+  padding-bottom: 153px; }
+  body #main section #portfolio h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    line-height: 1.2em;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.15em; }
+  body #main section #portfolio .container .row .col-md-3 h2 {
+    margin: 0;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+body #main section #contact h2 {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  line-height: 1.2em;
+  color: black;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.1em; }
+body #main section #contact .container .r1 .left {
+  color: gray; }
+  body #main section #contact .container .r1 .left a {
+    color: gray; }
+    body #main section #contact .container .r1 .left a:hover {
+      color: #f44336; }
+  body #main section #contact .container .r1 .left h4 {
+    color: black; }
+  body #main section #contact .container .r1 .left p {
+    padding: 0;
+    text-align: justify; }
+  body #main section #contact .container .r1 .left ul {
+    padding: 0px; }
+    body #main section #contact .container .r1 .left ul li {
+      margin-bottom: 15px; }
+      body #main section #contact .container .r1 .left ul li i {
+        height: 40px;
+        width: 40px;
+        background: #f44336;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        border-radius: 50%; }
+      body #main section #contact .container .r1 .left ul li span {
+        margin-left: 10px; }
+        body #main section #contact .container .r1 .left ul li span a {
+          text-decoration: none; }
+body #main section #contact .container .r2 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  body #main section #contact .container .r2 ul li {
+    margin: 10px 10px; }
+body #main .footer {
+  background-color: #38dcc8;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  body #main .footer span {
+    font-family: "Mulish", sans-serif;
+    color: white;
+    font-size: 14px; }
+body #toTop {
+  position: fixed;
+  top: 90%;
+  right: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s; }
+  body #toTop a i {
+    font-size: 19px;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 30px;
+    background-color: #e8676b;
+    transition: 0.3s; }
+    body #toTop a i:hover {
+      background-color: black; }
+
+/*# sourceMappingURL=style.css.map */

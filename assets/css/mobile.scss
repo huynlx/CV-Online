@@ -1,0 +1,501 @@
+@media (max-width: 575.98px){
+    // xs
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    //sm
+    //bs4 md
+    body {
+        // background-color: red;
+        #main {
+            header {
+                .header {
+                    .logo {
+                        h1 {
+                            a {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                    .navbar-default {
+                        display: none;
+                        ul {
+                            li {
+                                a {
+                                }
+                            }
+                        }
+                    }
+                    .show-menu-btn {
+                        // position: absolute;
+                        // top: 50%;
+                        display: flex;
+                        align-items: center;
+                        opacity: 1;
+                        visibility: visible;
+                        font-size: 30px;
+                        padding-right: 5px;
+                        i {
+                            color: white;
+                        }
+                    }
+                    #navbar-alt {
+                        // margin: 0;
+                        // padding: 0;
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        top: 0px;
+                        // flex-direction: column;
+                        // background-color: black;
+                        a {
+                            transition: all 0.3s;
+                            text-align: center;
+                            color: white;
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                a {
+                    .downn {
+                        right: 0;
+                        left: 0;
+                    }
+                }
+                .block {
+                    right: 0;
+                    left: 0;
+                }
+            }
+
+            .slogan {
+                p {
+                    span {
+                        font-size: 50px;
+                    }
+                }
+            }
+            section {
+                #skills {
+                    h2 {
+                    }
+                    .container-fluid {
+                        padding-right: 80px;
+                        padding-left: 80px;
+                        .row {
+                            .col-sm-6.col-md-2.col-lg-2 {
+                                .square {
+                                    margin: 0;
+                                    max-width: 94%;
+                                }
+                            }
+                            .cc {
+                                // margin-left: 8.166667%;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                #portfolio {
+                    .container {
+                        .flip-container {
+                            // height: 270px;
+                        }
+                        h2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .readmore {
+                p.say {
+                    top: 52%;
+                }
+            }
+        }
+        #nav2 {
+            #narbar {
+                h2 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    //md
+    //bs4 lg
+    body {
+        // background-color: red;
+        #main {
+            header {
+                .header {
+                    .logo {
+                        h1 {
+                            a {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                    .navbar-default {
+                        // display: none;
+                        ul {
+                            li {
+                                a {
+                                    font-size: 14px;
+                                    margin-left: 0px;
+                                    padding: 5px 10px;
+                                }
+                            }
+                        }
+                    }
+                    .show-menu-btn {
+                        // position: absolute;
+                        // top: 50%;
+                        // display: flex;
+                        align-items: center;
+                        opacity: 1;
+                        visibility: visible;
+                        font-size: 30px;
+                        padding-right: 5px;
+                        i {
+                            color: white;
+                        }
+                    }
+                    #navbar-alt {
+                        // margin: 0;
+                        // padding: 0;
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        top: 0px;
+                        // flex-direction: column;
+                        // background-color: black;
+                        a {
+                            transition: all 0.3s;
+                            text-align: center;
+                            color: white;
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                .block {
+                    right: 0;
+                    left: 0;
+                }
+                a {
+                    .downn {
+                        right: 0;
+                        left: 0;
+                    }
+                }
+            }
+            .slogan {
+                p {
+                    span {
+                        font-size: 50px;
+                    }
+                }
+            }
+            section {
+                #about {
+                    .container {
+                        .row {
+                            background-position: 7px 150px;
+                            .col-md-0 {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                #skills {
+                    h2 {
+                    }
+                    .container-fluid {
+                        // padding-right: 80px;
+                        // padding-left: 80px;
+                        .row {
+                            .col-sm-6.col-md-2.col-lg-2 {
+                                .square {
+                                    height: 200px;
+                                    margin: 0;
+                                    max-width: 90%;
+                                    img {
+                                        transform: scale(0.8);
+                                    }
+                                    &:hover {
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                            .cc {
+                                margin-left: 8.166667%;
+                            }
+                        }
+                    }
+                }
+                #portfolio {
+                    .container {
+                        .flip-container {
+                            height: 270px;
+                        }
+                    }
+                }
+            }
+            .readmore {
+                p.say {
+                    top: 53%;
+                }
+            }
+        }
+
+        #nav2 {
+            #narbar {
+                h2 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    //lg
+    body {
+        #main {
+            header {
+                .header {
+                    .logo {
+                        h1 {
+                            a {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                    .navbar-default {
+                        // display: none;
+                        ul {
+                            li {
+                                a {
+                                }
+                            }
+                        }
+                    }
+                    .show-menu-btn {
+                        // display: flex;
+                        align-items: center;
+                        // opacity: 1;
+                        // visibility: visible;
+                        font-size: 30px;
+                        padding-right: 5px;
+                        i {
+                            color: white;
+                        }
+                    }
+                    #navbar-alt {
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        top: 0px;
+                        a {
+                            transition: all 0.3s;
+                            text-align: center;
+                            color: white;
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                .block {
+                    right: 0;
+                    left: 0;
+                }
+                a {
+                    .downn {
+                        right: 0;
+                        left: 0;
+                    }
+                }
+            }
+            .slogan {
+                p {
+                    span {
+                        font-size: 50px;
+                    }
+                }
+            }
+            section {
+                #about {
+                    .container {
+                        .row {
+                            background-position: 135px 150px;
+                            .square1 {
+                                width: unset;
+                            }
+                        }
+                    }
+                }
+                #skills {
+                    h2 {
+                    }
+                    .container-fluid {
+                        // padding-right: 80px;
+                        // padding-left: 80px;
+                        .row {
+                            .col-sm-6.col-md-2.col-lg-2 {
+                                .square {
+                                    height: 234px;
+                                    margin: 0;
+                                    max-width: 90%;
+                                    img {
+                                        transform: scale(0.8);
+                                    }
+                                    &:hover {
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                            .cc {
+                                margin-left: 8.166667%;
+                            }
+                        }
+                    }
+                }
+                #portfolio {
+                    .container {
+                        .flip-container {
+                            height: 337px;
+                        }
+                    }
+                }
+            }
+            .readmore {
+                p.say {
+                    top: 53%;
+                }
+            }
+        }
+        #nav2 {
+            #narbar {
+                h2 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    //xl
+    body {
+        #main {
+            header {
+                .header {
+                    .logo {
+                        h1 {
+                            a {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                    .navbar-default {
+                        // display: none;
+                        ul {
+                            li {
+                                a {
+                                }
+                            }
+                        }
+                    }
+                    .show-menu-btn {
+                        // display: flex;
+                        align-items: center;
+                        // opacity: 1;
+                        // visibility: visible;
+                        font-size: 30px;
+                        padding-right: 5px;
+                        i {
+                            color: white;
+                        }
+                    }
+                    #navbar-alt {
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        top: 0px;
+                        a {
+                            transition: all 0.3s;
+                            text-align: center;
+                            color: white;
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                .block {
+                    // left: 44.6%;
+                    // left: 50%;
+                    right: 0;
+                    left: 0;
+                    // transform: translateX(-50%);
+                }
+                a {
+                    .downn {
+                        // left: 48.2%;
+                        right: 0;
+                        left: 0;
+                    }
+                }
+            }
+            .slogan {
+                p {
+                    span {
+                        // font-size: 50px;
+                    }
+                }
+            }
+            .readmore {
+                p.say {
+                    // top: 53%;
+                }
+            }
+            section {
+                #skills {
+                    h2 {
+                    }
+                    .container-fluid {
+                        // padding-right: 80px;
+                        // padding-left: 80px;
+                        .row {
+                            .col-sm-6.col-md-2.col-lg-2 {
+                                .square {
+                                    // margin: 0;
+                                    max-width: 93%;
+                                }
+                            }
+                            .cc {
+                                margin-left: 8.166667%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #nav2 {
+            #narbar {
+                h2 {
+                    // display: none;
+                }
+            }
+        }
+    }
+}

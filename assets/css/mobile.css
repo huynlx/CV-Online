@@ -1,0 +1,181 @@
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body #main header .header .logo h1 a {
+    font-size: 2rem; }
+  body #main header .header .navbar-default {
+    display: none; }
+  body #main header .header .show-menu-btn {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    font-size: 30px;
+    padding-right: 5px; }
+    body #main header .header .show-menu-btn i {
+      color: white; }
+  body #main header .header #navbar-alt {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0px; }
+    body #main header .header #navbar-alt a {
+      transition: all 0.3s;
+      text-align: center;
+      color: white; }
+      body #main header .header #navbar-alt a:hover {
+        color: red; }
+  body #main header a .downn {
+    right: 0;
+    left: 0; }
+  body #main header .block {
+    right: 0;
+    left: 0; }
+  body #main .slogan p span {
+    font-size: 50px; }
+  body #main section #skills .container-fluid {
+    padding-right: 80px;
+    padding-left: 80px; }
+    body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square {
+      margin: 0;
+      max-width: 94%; }
+    body #main section #skills .container-fluid .row .cc {
+      margin-left: 0; }
+  body #main section #portfolio .container h2 {
+    display: none; }
+  body #main .readmore p.say {
+    top: 52%; }
+  body #nav2 #narbar h2 {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body #main header .header .logo h1 a {
+    font-size: 2rem; }
+  body #main header .header .navbar-default ul li a {
+    font-size: 14px;
+    margin-left: 0px;
+    padding: 5px 10px; }
+  body #main header .header .show-menu-btn {
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    font-size: 30px;
+    padding-right: 5px; }
+    body #main header .header .show-menu-btn i {
+      color: white; }
+  body #main header .header #navbar-alt {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0px; }
+    body #main header .header #navbar-alt a {
+      transition: all 0.3s;
+      text-align: center;
+      color: white; }
+      body #main header .header #navbar-alt a:hover {
+        color: red; }
+  body #main header .block {
+    right: 0;
+    left: 0; }
+  body #main header a .downn {
+    right: 0;
+    left: 0; }
+  body #main .slogan p span {
+    font-size: 50px; }
+  body #main section #about .container .row {
+    background-position: 7px 150px; }
+    body #main section #about .container .row .col-md-0 {
+      display: none; }
+  body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square {
+    height: 200px;
+    margin: 0;
+    max-width: 90%; }
+    body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square img {
+      transform: scale(0.8); }
+    body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square:hover span {
+      font-size: 14px; }
+  body #main section #skills .container-fluid .row .cc {
+    margin-left: 8.166667%; }
+  body #main section #portfolio .container .flip-container {
+    height: 270px; }
+  body #main .readmore p.say {
+    top: 53%; }
+  body #nav2 #narbar h2 {
+    display: none; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body #main header .header .logo h1 a {
+    font-size: 2rem; }
+  body #main header .header .show-menu-btn {
+    align-items: center;
+    font-size: 30px;
+    padding-right: 5px; }
+    body #main header .header .show-menu-btn i {
+      color: white; }
+  body #main header .header #navbar-alt {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0px; }
+    body #main header .header #navbar-alt a {
+      transition: all 0.3s;
+      text-align: center;
+      color: white; }
+      body #main header .header #navbar-alt a:hover {
+        color: red; }
+  body #main header .block {
+    right: 0;
+    left: 0; }
+  body #main header a .downn {
+    right: 0;
+    left: 0; }
+  body #main .slogan p span {
+    font-size: 50px; }
+  body #main section #about .container .row {
+    background-position: 135px 150px; }
+    body #main section #about .container .row .square1 {
+      width: unset; }
+  body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square {
+    height: 234px;
+    margin: 0;
+    max-width: 90%; }
+    body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square img {
+      transform: scale(0.8); }
+    body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square:hover span {
+      font-size: 14px; }
+  body #main section #skills .container-fluid .row .cc {
+    margin-left: 8.166667%; }
+  body #main section #portfolio .container .flip-container {
+    height: 337px; }
+  body #main .readmore p.say {
+    top: 53%; }
+  body #nav2 #narbar h2 {
+    display: none; } }
+@media (min-width: 1200px) {
+  body #main header .header .logo h1 a {
+    font-size: 2rem; }
+  body #main header .header .show-menu-btn {
+    align-items: center;
+    font-size: 30px;
+    padding-right: 5px; }
+    body #main header .header .show-menu-btn i {
+      color: white; }
+  body #main header .header #navbar-alt {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0px; }
+    body #main header .header #navbar-alt a {
+      transition: all 0.3s;
+      text-align: center;
+      color: white; }
+      body #main header .header #navbar-alt a:hover {
+        color: red; }
+  body #main header .block {
+    right: 0;
+    left: 0; }
+  body #main header a .downn {
+    right: 0;
+    left: 0; }
+  body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square {
+    max-width: 93%; }
+  body #main section #skills .container-fluid .row .cc {
+    margin-left: 8.166667%; } }
+
+/*# sourceMappingURL=mobile.css.map */
