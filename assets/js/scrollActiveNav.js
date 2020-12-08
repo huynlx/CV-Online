@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 
     $('#main').scroll(function () {
-        console.log($('#main').scrollTop());
+        // console.log($('#main').scrollTop());
         if ($('#main').scrollTop() > 400) {
             nav.addClass('show');
         }
