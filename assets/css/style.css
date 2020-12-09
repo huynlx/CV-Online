@@ -41,6 +41,7 @@ body #main header {
       body #main header .header .show-menu-btn i {
         color: white; }
     body #main header .header #navbar-alt {
+      opacity: 0.9;
       margin: 0;
       padding: 0;
       position: absolute;

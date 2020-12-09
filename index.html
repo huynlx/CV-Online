@@ -65,11 +65,25 @@
             /* border-bottom-color: ; */
         }
 
+        #narbar #chk2,
+        #narbar .show-menu-btn2 {
+            display: none;
+        }
+
         #narbar h2 {
             margin-top: .5rem;
             display: flex;
             align-items: center;
             padding-left: 100px;
+
+        }
+
+        #narbar #chk3 {
+            display: none;
+        }
+
+        #narbar .show-menu-btn3 {
+            display: none;
 
         }
 
@@ -206,7 +220,6 @@
                 background-position: 0 0;
             }
         }
-        
     </style>
 </head>
 
@@ -245,9 +258,9 @@
 
                 <nav class="nav justify-content-center" id="navbar-alt">
                     <a class="nav-link" id="alt0" style="padding-top: 1rem;">Home</a>
-                    <a class="nav-link" id="alt1" >About</a>
-                    <a class="nav-link" id="alt2" >Skills</a>
-                    <a class="nav-link" id="alt3" >Portfolio</a>
+                    <a class="nav-link" id="alt1">About</a>
+                    <a class="nav-link" id="alt2">Skills</a>
+                    <a class="nav-link" id="alt3">Portfolio</a>
                     <a class="nav-link" id="alt4" style="padding-bottom: 1rem;">Contact</a>
                 </nav>
             </div>
@@ -357,7 +370,8 @@
                                     <!-- <div class="col-md-1"></div> -->
                                     <div class="col-sm-6 col-md-2 col-lg-2 cc">
                                         <div class="square mx-auto">
-                                            <img class="img-fluid" src="./assets/images/download.png" alt="" width="150" height="150">
+                                            <img class="img-fluid" src="./assets/images/download.png" alt="" width="150"
+                                                height="150">
 
                                             <div class="team-caption1 team-caption">
 
@@ -369,7 +383,8 @@
                                     </div>
                                     <div class="col-sm-6 col-md-2 col-lg-2">
                                         <div class="square mx-auto"><img style="/*transform: scale(1.19);*/"
-                                                class="img-fluid" src="./assets/images/css3.svg" alt="" width="150" height="150">
+                                                class="img-fluid" src="./assets/images/css3.svg" alt="" width="150"
+                                                height="150">
                                             <div class="team-caption2 team-caption">
 
                                             </div><span>CSS3/SCSS</span>
@@ -387,7 +402,8 @@
                                     </div>
                                     <div class="col-sm-6 col-md-2 col-lg-2">
                                         <div class="square mx-auto"><img class="img-fluid"
-                                                src="./assets/images/jquery-logo-vertical_large_square.png" alt="" width="150" height="150">
+                                                src="./assets/images/jquery-logo-vertical_large_square.png" alt=""
+                                                width="150" height="150">
                                             <div class="team-caption4 team-caption">
 
 
@@ -414,12 +430,12 @@
                                     <!-- <div class="col-md-1 col-sm-0"></div> -->
                                     <!-- <div class="col-md-1"></div> -->
 
-                                    
 
 
-                                <!-- </div> -->
-                                <!-- <div class="row m-0 p-0"> -->
-                                    
+
+                                    <!-- </div> -->
+                                    <!-- <div class="row m-0 p-0"> -->
+
                                     <!-- <div class="col-md-1 cil-sm-0"></div> -->
                                     <div class="col-sm-6 col-md-2 col-lg-2 cc">
                                         <div class="square mx-auto"><img class="img-fluid"
@@ -432,7 +448,8 @@
                                     <!-- <div class="col-md-1"></div> -->
                                     <div class="col-sm-6 col-md-2 col-lg-2">
                                         <div class="square mx-auto"><img class="img-fluid"
-                                                src="./assets/images/MySQL-logo-17DB4E5FD6-seeklogo.com.png" alt="" width="150" height="150">
+                                                src="./assets/images/MySQL-logo-17DB4E5FD6-seeklogo.com.png" alt=""
+                                                width="150" height="150">
                                             <div class="team-caption7 team-caption">
 
                                             </div><span>MYSQL</span>
@@ -450,7 +467,8 @@
                                     </div>
                                     <div class="col-sm-6 col-md-2 col-lg-2">
                                         <div class="square mx-auto"><img class="img-fluid"
-                                                src="./assets/images/1200px-Laravel.svg.png" alt="" width="150" height="150">
+                                                src="./assets/images/1200px-Laravel.svg.png" alt="" width="150"
+                                                height="150">
                                             <div class="team-caption9 team-caption">
 
 
@@ -668,6 +686,15 @@
                 <li><a class="nav-link nn1" href="#portfolio">Portfolio</a></li>
                 <li><a class="nav-link nn1" href="#contact">Contact</a></li>
             </ul>
+            <label for="chk2" class="show-menu-btn2">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <label for="chk3" class="show-menu-btn3">
+                <i class="fa fa-times-circle"></i>
+            </label>
+            <input type="checkbox" class="form-check-input" name="" id="chk2">
+            <input type="checkbox" class="form-check-input" name="" id="chk3">
+
         </nav>
     </div>
 
@@ -746,6 +773,41 @@
                 if (!container.is(e.target) && container.has(e.target).length === 0) {
                     container.slideUp('fast');
                     $('#chk').prop('checked', false);
+                }
+            });
+            $("#chk2").change(function () {
+                if ($(this).is(':checked')) {
+                    // add the rest...
+                    $('#narbar ul').slideDown('fast');
+                    $('.show-menu-btn2').css('display', 'none');
+                    $('.show-menu-btn3').css('display', 'block');
+                } else {
+                    $('#narbar ul').slideUp('fast');
+                    $('.show-menu-btn2').css('display', 'block');
+                }
+            });
+            // $("#chk3").change(function () {
+            //     if ($(this).not(':checked')) {
+            //         // add the rest...
+
+            //         $('#narbar ul').slideUp('fast');
+            //         $('.show-menu-btn2').css('display', 'block');
+            //     } else {
+            //         $('#narbar ul').slideDown('fast');
+            //         $('.show-menu-btn2').css('display', 'none');
+            //         $('.show-menu-btn3').css('display', 'block');
+
+            //     }
+            // });
+            $(document).mouseup(function (e) {
+                var container = $("#narbar ul");
+
+                // if the target of the click isn't the container nor a descendant of the container
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    container.slideUp('fast');
+                    $('#chk2').prop('checked', false);
+                    $('.show-menu-btn2').css('display', 'block');
+                    $('.show-menu-btn3').css('display', 'none');
                 }
             });
         });

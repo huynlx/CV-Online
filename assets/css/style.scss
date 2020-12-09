@@ -68,11 +68,13 @@ body {
                     display: none;
                     opacity: 0;
                     visibility: hidden;
-                    i{
+                    i {
                         color: white;
                     }
                 }
                 #navbar-alt {
+                    opacity: 0.9;
+
                     margin: 0;
                     padding: 0;
                     position: absolute;
@@ -86,10 +88,10 @@ body {
                         color: white;
                     }
                 }
-                #navbar-alt{
+                #navbar-alt {
                     display: none;
                 }
-                #chk{
+                #chk {
                     opacity: 0;
                     visibility: hidden;
                 }
@@ -386,7 +388,7 @@ body {
                                 }
                             }
                         }
-                        .cc{
+                        .cc {
                             margin-left: 0;
                         }
                     }
