@@ -1,3 +1,197 @@
+@media screen and (max-width: 415.98px) {
+  body #main header .header {
+    padding-left: 30px;
+    padding-right: 30px; }
+    body #main header .header .logo h1 a {
+      font-size: 1.5rem; }
+    body #main header .header .navbar-default {
+      display: none; }
+    body #main header .header .show-menu-btn {
+      display: flex;
+      align-items: center;
+      opacity: 1;
+      visibility: visible;
+      font-size: 30px;
+      padding: 10px; }
+      body #main header .header .show-menu-btn i {
+        color: white; }
+    body #main header .header #navbar-alt {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0px; }
+      body #main header .header #navbar-alt a {
+        transition: all 0.3s;
+        text-align: center;
+        color: white; }
+        body #main header .header #navbar-alt a:hover {
+          color: red; }
+  body #main header a .downn {
+    right: 0;
+    left: 0; }
+  body #main header .block {
+    right: 0;
+    left: 0; }
+  body #main .slogan p span {
+    font-size: 40px; }
+  body #main section #skills .container-fluid {
+    padding-right: 80px;
+    padding-left: 80px; }
+    body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square {
+      margin: 0;
+      max-width: 94%; }
+    body #main section #skills .container-fluid .row .cc {
+      margin-left: 0; }
+  body #main section #portfolio .container .flip-container .back {
+    width: 65%;
+    margin-left: 17.5%; }
+  body #main section #portfolio .container .flip-container .front {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: unset;
+    left: unset; }
+  body #main section #portfolio .container h2 {
+    display: none; }
+  body #main .readmore p.say {
+    font-size: 0.8em;
+    top: 52%; }
+  body #nav2 #narbar {
+    display: none; }
+    body #nav2 #narbar ul li {
+      float: unset;
+      text-align: center; }
+    body #nav2 #narbar h2 {
+      display: none; } }
+@media (min-width: 416px) and (max-width: 574.98px) {
+  body #main header .header {
+    padding-left: 30px;
+    padding-right: 30px; }
+    body #main header .header .logo h1 a {
+      font-size: 1.5rem; }
+    body #main header .header .navbar-default {
+      display: none; }
+    body #main header .header .show-menu-btn {
+      display: flex;
+      align-items: center;
+      opacity: 1;
+      visibility: visible;
+      font-size: 30px;
+      padding: 10px; }
+      body #main header .header .show-menu-btn i {
+        color: white; }
+    body #main header .header #navbar-alt {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0px; }
+      body #main header .header #navbar-alt a {
+        transition: all 0.3s;
+        text-align: center;
+        color: white; }
+        body #main header .header #navbar-alt a:hover {
+          color: red; }
+  body #main header a .downn {
+    right: 0;
+    left: 0; }
+  body #main header .block {
+    right: 0;
+    left: 0; }
+  body #main .slogan p span {
+    font-size: 40px; }
+  body #main section #skills .container-fluid {
+    padding-right: 80px;
+    padding-left: 80px; }
+    body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square {
+      margin: 0;
+      max-width: 94%; }
+    body #main section #skills .container-fluid .row .cc {
+      margin-left: 0; }
+  body #main section #portfolio .container .flip-container .back {
+    width: 43%;
+    margin-left: 28.5%; }
+  body #main section #portfolio .container .flip-container .front {
+    width: 43%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: unset;
+    left: unset; }
+  body #main section #portfolio .container h2 {
+    display: none; }
+  body #main .readmore p.say {
+    font-size: 0.8em;
+    top: 52%; }
+  body #nav2 #narbar {
+    display: none; }
+    body #nav2 #narbar ul li {
+      float: unset;
+      text-align: center; }
+    body #nav2 #narbar h2 {
+      display: none; } }
+@media (min-width: 575px) and (max-width: 575.98px) {
+  body #main header .header .logo h1 a {
+    font-size: 2rem; }
+  body #main header .header .navbar-default {
+    display: none; }
+  body #main header .header .show-menu-btn {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    font-size: 30px;
+    padding: 10px; }
+    body #main header .header .show-menu-btn i {
+      color: white; }
+  body #main header .header #navbar-alt {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0px; }
+    body #main header .header #navbar-alt a {
+      transition: all 0.3s;
+      text-align: center;
+      color: white; }
+      body #main header .header #navbar-alt a:hover {
+        color: red; }
+  body #main header a .downn {
+    right: 0;
+    left: 0; }
+  body #main header .block {
+    right: 0;
+    left: 0; }
+  body #main .slogan p span {
+    font-size: 50px; }
+  body #main section #skills .container-fluid {
+    padding-right: 80px;
+    padding-left: 80px; }
+    body #main section #skills .container-fluid .row .col-sm-6.col-md-2.col-lg-2 .square {
+      margin: 0;
+      max-width: 94%; }
+    body #main section #skills .container-fluid .row .cc {
+      margin-left: 0; }
+  body #main section #portfolio .container .flip-container .back {
+    width: 43%;
+    margin-left: 28.5%; }
+  body #main section #portfolio .container .flip-container .front {
+    width: 43%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: unset;
+    left: unset; }
+  body #main section #portfolio .container h2 {
+    display: none; }
+  body #main .readmore p.say {
+    top: 52%; }
+  body #nav2 #narbar {
+    display: none; }
+    body #nav2 #narbar ul li {
+      float: unset;
+      text-align: center; }
+    body #nav2 #narbar h2 {
+      display: none; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
   body #main header .header .logo h1 a {
     font-size: 2rem; }
@@ -9,7 +203,7 @@
     opacity: 1;
     visibility: visible;
     font-size: 30px;
-    padding-right: 5px; }
+    padding: 10px; }
     body #main header .header .show-menu-btn i {
       color: white; }
   body #main header .header #navbar-alt {
@@ -43,6 +237,12 @@
     display: none; }
   body #main .readmore p.say {
     top: 52%; }
+  body #nav2 #narbar ul {
+    padding-right: 10px;
+    padding-left: 10px; }
+    body #nav2 #narbar ul li {
+      margin-left: 10px;
+      margin-right: 10px; }
   body #nav2 #narbar h2 {
     display: none; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -57,7 +257,7 @@
     opacity: 1;
     visibility: visible;
     font-size: 30px;
-    padding-right: 5px; }
+    padding: 10px; }
     body #main header .header .show-menu-btn i {
       color: white; }
   body #main header .header #navbar-alt {
@@ -105,7 +305,7 @@
   body #main header .header .show-menu-btn {
     align-items: center;
     font-size: 30px;
-    padding-right: 5px; }
+    padding: 10px; }
     body #main header .header .show-menu-btn i {
       color: white; }
   body #main header .header #navbar-alt {
@@ -153,7 +353,7 @@
   body #main header .header .show-menu-btn {
     align-items: center;
     font-size: 30px;
-    padding-right: 5px; }
+    padding: 10px; }
     body #main header .header .show-menu-btn i {
       color: white; }
   body #main header .header #navbar-alt {

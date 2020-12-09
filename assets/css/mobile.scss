@@ -1,6 +1,447 @@
-@media (max-width: 575.98px){
-    // xs
+@media screen and (max-width: 415.98px) {
+    body {
+        // background-color: red;
+        #main {
+            header {
+                .header {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    .logo {
+                        h1 {
+                            a {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    .navbar-default {
+                        display: none;
+                        ul {
+                            li {
+                                a {
+                                }
+                            }
+                        }
+                    }
+                    .show-menu-btn {
+                        // position: absolute;
+                        // top: 50%;
+                        display: flex;
+                        align-items: center;
+                        opacity: 1;
+                        visibility: visible;
+                        font-size: 30px;
+                        padding: 10px;
+                        i {
+                            color: white;
+                        }
+                    }
+                    #navbar-alt {
+                        // margin: 0;
+                        // padding: 0;
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        top: 0px;
+                        // flex-direction: column;
+                        // background-color: black;
+                        a {
+                            transition: all 0.3s;
+                            text-align: center;
+                            color: white;
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                a {
+                    .downn {
+                        right: 0;
+                        left: 0;
+                    }
+                }
+                .block {
+                    right: 0;
+                    left: 0;
+                }
+            }
 
+            .slogan {
+                p {
+                    span {
+                        font-size: 40px;
+                    }
+                }
+            }
+            section {
+                #skills {
+                    h2 {
+                    }
+                    .container-fluid {
+                        padding-right: 80px;
+                        padding-left: 80px;
+                        .row {
+                            .col-sm-6.col-md-2.col-lg-2 {
+                                .square {
+                                    margin: 0;
+                                    max-width: 94%;
+                                }
+                            }
+                            .cc {
+                                // margin-left: 8.166667%;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                #portfolio {
+                    .container {
+                        .flip-container {
+                            // height: 270px;
+                            .front,
+                            .back {
+                            }
+                            .back {
+                                width: 65%;
+                                margin-left: 17.5%;
+                            }
+                            .front {
+                                // width: 53%;
+                                width: 65%;
+
+                                margin-left: auto;
+                                margin-right: auto;
+                                position: relative;
+                                top: unset;
+                                left: unset;
+                            }
+                        }
+                        h2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .readmore {
+                p.say {
+                    font-size: 0.8em;
+                    top: 52%;
+                }
+            }
+        }
+        #nav2 {
+            #narbar {
+                display: none;
+                ul {
+                    li {
+                        float: unset;
+                        text-align: center;
+                        a {
+                        }
+                    }
+                }
+                h2 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 416px) and (max-width: 574.98px) {
+    body {
+        // background-color: red;
+        #main {
+            header {
+                .header {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    .logo {
+                        h1 {
+                            a {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    .navbar-default {
+                        display: none;
+                        ul {
+                            li {
+                                a {
+                                }
+                            }
+                        }
+                    }
+                    .show-menu-btn {
+                        // position: absolute;
+                        // top: 50%;
+                        display: flex;
+                        align-items: center;
+                        opacity: 1;
+                        visibility: visible;
+                        font-size: 30px;
+                        padding: 10px;
+                        i {
+                            color: white;
+                        }
+                    }
+                    #navbar-alt {
+                        // margin: 0;
+                        // padding: 0;
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        top: 0px;
+                        // flex-direction: column;
+                        // background-color: black;
+                        a {
+                            transition: all 0.3s;
+                            text-align: center;
+                            color: white;
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                a {
+                    .downn {
+                        right: 0;
+                        left: 0;
+                    }
+                }
+                .block {
+                    right: 0;
+                    left: 0;
+                }
+            }
+
+            .slogan {
+                p {
+                    span {
+                        font-size: 40px;
+                    }
+                }
+            }
+            section {
+                #skills {
+                    h2 {
+                    }
+                    .container-fluid {
+                        padding-right: 80px;
+                        padding-left: 80px;
+                        .row {
+                            .col-sm-6.col-md-2.col-lg-2 {
+                                .square {
+                                    margin: 0;
+                                    max-width: 94%;
+                                }
+                            }
+                            .cc {
+                                // margin-left: 8.166667%;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                #portfolio {
+                    .container {
+                        .flip-container {
+                            // height: 270px;
+                            .front,
+                            .back {
+                            }
+                            .back {
+                                width: 43%;
+                                margin-left: 28.5%;
+                            }
+                            .front {
+                                // width: 53%;
+                                width: 43%;
+
+                                margin-left: auto;
+                                margin-right: auto;
+                                position: relative;
+                                top: unset;
+                                left: unset;
+                            }
+                        }
+                        h2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .readmore {
+                p.say {
+                    font-size: 0.8em;
+                    top: 52%;
+                }
+            }
+        }
+        #nav2 {
+            #narbar {
+                display: none;
+                ul {
+                    li {
+                        float: unset;
+                        text-align: center;
+                        a {
+                        }
+                    }
+                }
+                h2 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 575px) and (max-width: 575.98px) {
+    // xs
+    body {
+        // background-color: red;
+        #main {
+            header {
+                .header {
+                    .logo {
+                        h1 {
+                            a {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                    .navbar-default {
+                        display: none;
+                        ul {
+                            li {
+                                a {
+                                }
+                            }
+                        }
+                    }
+                    .show-menu-btn {
+                        // position: absolute;
+                        // top: 50%;
+                        display: flex;
+                        align-items: center;
+                        opacity: 1;
+                        visibility: visible;
+                        font-size: 30px;
+                        padding: 10px;
+                        i {
+                            color: white;
+                        }
+                    }
+                    #navbar-alt {
+                        // margin: 0;
+                        // padding: 0;
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        top: 0px;
+                        // flex-direction: column;
+                        // background-color: black;
+                        a {
+                            transition: all 0.3s;
+                            text-align: center;
+                            color: white;
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                a {
+                    .downn {
+                        right: 0;
+                        left: 0;
+                    }
+                }
+                .block {
+                    right: 0;
+                    left: 0;
+                }
+            }
+
+            .slogan {
+                p {
+                    span {
+                        font-size: 50px;
+                    }
+                }
+            }
+            section {
+                #skills {
+                    h2 {
+                    }
+                    .container-fluid {
+                        padding-right: 80px;
+                        padding-left: 80px;
+                        .row {
+                            .col-sm-6.col-md-2.col-lg-2 {
+                                .square {
+                                    margin: 0;
+                                    max-width: 94%;
+                                }
+                            }
+                            .cc {
+                                // margin-left: 8.166667%;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                #portfolio {
+                    .container {
+                        .flip-container {
+                            // height: 270px;
+                            .front,
+                            .back {
+                            }
+                            .back {
+                                width: 43%;
+                                margin-left: 28.5%;
+                            }
+                            .front {
+                                // width: 53%;
+                                width: 43%;
+
+                                margin-left: auto;
+                                margin-right: auto;
+                                position: relative;
+                                top: unset;
+                                left: unset;
+                            }
+                        }
+                        h2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .readmore {
+                p.say {
+                    top: 52%;
+                }
+            }
+        }
+        #nav2 {
+            #narbar {
+                display: none;
+                ul {
+                    li {
+                        float: unset;
+                        text-align: center;
+                        a {
+                        }
+                    }
+                }
+                h2 {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
     //sm
@@ -34,7 +475,7 @@
                         opacity: 1;
                         visibility: visible;
                         font-size: 30px;
-                        padding-right: 5px;
+                        padding: 10px;
                         i {
                             color: white;
                         }
@@ -117,6 +558,14 @@
         }
         #nav2 {
             #narbar {
+                ul {
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    li {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                }
                 h2 {
                     display: none;
                 }
@@ -160,7 +609,7 @@
                         opacity: 1;
                         visibility: visible;
                         font-size: 30px;
-                        padding-right: 5px;
+                        padding: 10px;
                         i {
                             color: white;
                         }
@@ -293,7 +742,7 @@
                         // opacity: 1;
                         // visibility: visible;
                         font-size: 30px;
-                        padding-right: 5px;
+                        padding: 10px;
                         i {
                             color: white;
                         }
@@ -421,7 +870,7 @@
                         // opacity: 1;
                         // visibility: visible;
                         font-size: 30px;
-                        padding-right: 5px;
+                        padding: 10px;
                         i {
                             color: white;
                         }
