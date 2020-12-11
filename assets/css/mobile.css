@@ -448,6 +448,8 @@
   body #nav2 #narbar h2 {
     display: block; }
   body #nav2 #narbar .show-menu-btn3 {
+    display: none; }
+  body #nav2 #narbar .show-menu-btn2 {
     display: none; } }
 @media screen and (max-width: 575.98px) {
   body #main section #about .container .row {

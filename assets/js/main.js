@@ -24,7 +24,7 @@ $(document).ready(function () {
     $('.nn1').click(function () {
         $("html,body,#main").css("scroll-behavior", "smooth");
     });
-    $('.downn').click(function (e) {
+    $('.down').click(function (e) {
         e.preventDefault();
         $("html,body,#main").css("scroll-behavior", "unset");
         $('#main').animate({

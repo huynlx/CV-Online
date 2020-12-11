@@ -16,15 +16,15 @@ html {
 }
 
 header {
-    transform: translateZ(-1px) scale(2.01);
+    transform: translateZ(-1px) scale(2.03);
     padding: 1px 0;
 }
 div.down {
-    position: absolute;
+    /* position: absolute; */
     width: 0;
     height: 0;
     left: 50%;
-    bottom: 20px;
+    bottom:60px;
     transform: translate(-50%, -50%);
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;

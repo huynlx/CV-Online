@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" /> <!-- animate.css bản cũ ko cần prefix "animate" -->
 
 
     <style>
@@ -162,7 +162,7 @@
             /* border-radius: 50%; */
         }
 
-        .block {
+        /* .block {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -176,11 +176,30 @@
             height: 100px;
             background: none;
             border: 2px solid white;
+        } */
+        .block {
+            padding: 10px 15px;
+            width: 125px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 500px;
+            text-align: center;
+            color: white;
+            border-radius: 30px;
+            border: 2px solid white;
+            margin: auto auto;
+        }
+
+        .block:hover {
+            background-color: #e8676b;
+            /* opacity: 0.8; */
+
         }
 
 
 
-        .block:hover::after,
+        /* .block:hover::after,
         .block:hover::before {
             content: '';
             position: absolute;
@@ -203,8 +222,8 @@
         }
 
         .block:hover::after {
-            /* filter: blur(50px); */
-        }
+            filter: blur(50px);
+        } */
 
 
         @keyframes steam {
@@ -235,11 +254,11 @@
         <header id="" class="jarallax team2"
             style="background-image:url(./assets/images/2797c870a7a4f11364b8851db24fbaa9.jpg);">
             <div class="header container">
-                <div class="logo">
-                    <h1 id="brand"><a class="" href="index.html" style="font-weight: bold;">HUYNH's CV</a>
+                <div class="logo wow slideInLeft">
+                    <h1 id="brand"><a class="" href="index.html" style="font-weight: bold;">Huynh's CV</a>
                     </h1>
                 </div>
-                <nav class="nav navbar-default">
+                <nav class="nav navbar-default wow  slideInRight">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html" class="active" id="nav0">Home</a></li>
                         <li><a class="" id="nav1">About</a></li>
@@ -264,27 +283,28 @@
                     <a class="nav-link" id="alt4" style="padding-bottom: 1rem;">Contact</a>
                 </nav>
             </div>
+
             <a href="#about">
-                <div class="animated downn bounce infinite text-center slow"
-                    style="animation-duration: 2s;position: absolute;bottom:50px;">
-                    <i class="fa fa-angle-down" aria-hidden="true" style="color: #FFFFFF;
+                <div class="text-center down  wow  zoomInLeft" style="position: absolute;">
+                    <!-- <i class="fa fa-angle-down" aria-hidden="true" style="color: #FFFFFF;
                     font-size: 2em;
                     border: solid 1px #FFFFFF;
                     width: 50px;
                     height: 50px;
                     padding: .25em 0 0 0;
-                    border-radius: 50%;"></i>
+                    border-radius: 50%;"></i> -->
                 </div>
             </a>
-            <div type="button" data-toggle="modal" data-target="#exampleModal" class="block">
-                Introduce
-            </div>
+
             <!-- <a href="#about">
                 <div class="down"></div>
             </a> -->
 
         </header>
-        <div class="slogan">
+        <div type="button" data-toggle="modal" data-target="#exampleModal" class="block  wow  fadeIn">
+            Introduce
+        </div>
+        <div class="slogan wow  zoomInLeft">
             <!-- <h1>BEST YASUO</h1> -->
             <p class="" style="line-height:1.2em;"><span style="letter-spacing:0.15em;">Lê</span><span
                     style="letter-spacing:0em;"> </span><span style="letter-spacing:0.15em;">Xuân</span><span
@@ -302,7 +322,7 @@
         </div> -->
 
         <div class="readmore">
-            <p class="say" style="font-style: italic;">"Death is like the wind, always by my side"</p>
+            <p class="say   wow  fadeIn" style="font-style: italic;">"Death is like the wind, always by my side"</p>
 
 
             <!-- <div class="block"></div> -->
@@ -321,7 +341,7 @@
 
 
             <div class="">
-                <div id="about" class="n12 page-section"
+                <div id="about" class="n12 page-section "
                     style="background: radial-gradient(100% 100% at top, transparent 0%, #38dcc8 51%);">
                     <div class="container">
                         <div class="row"
@@ -329,7 +349,7 @@
                             <div class="col-lg-2 col-sm col-md-0"></div>
 
                             <div class="col-md-6 col-lg-4 col-sm-12 col-12">
-                                <div class="square1 mx-auto">
+                                <div class="square1 mx-auto   ">
                                     <h2>About</h2>
                                     <h2>Me!</h2>
                                 </div>
@@ -661,7 +681,6 @@
         </div>
 
         <div class="footer text-center">
-
             <span>Copyright © 2020 created by Le Xuan Huynh</span>
         </div>
 
@@ -755,8 +774,21 @@
     <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/scrollActiveNav.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script> -->
+    <script src="./assets/js/wow.min.js"></script>
     <script>
         $(document).ready(function () {
+            wow = new WOW(
+                {
+                    animateClass: 'animated',
+                    offset: 100,
+                    callback: function (box) {
+                        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                    }
+                }
+            );
+            wow.init();
+
             $("#chk").change(function () {
                 if ($(this).is(':checked')) {
                     // add the rest...
@@ -791,6 +823,7 @@
                         } else {
                             $('#narbar ul').slideUp('fast');
                             $('.show-menu-btn2').css('display', 'block');
+                            $('.show-menu-btn3').css('display', 'none');
                         }
                     });
                     $(document).mouseup(function (e) {
@@ -805,7 +838,6 @@
                         }
                     });
                 } else {
-                    // $('.show-menu-btn2').css('display', 'none');
                     $('.show-menu-btn3').css('display', 'none');
                     $('#narbar ul').css('display', 'block');
                     $('.show-menu-btn2').css('display', 'none');
